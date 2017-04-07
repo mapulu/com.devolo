@@ -757,10 +757,10 @@
         "productId": 373,
         "wakeUpInterval": 1800,
         "learnmode": {
-          "image": "drivers/014G0801/assets/learnmode.svg",
+          "image": "drivers/014G0801/assets/icon.svg",
           "instruction": {
-            "en": "Press the middle button on your Devolo Home Control Radiator Thermostat",
-            "nl": "Druk op de middelste knop van de Devolo Home Control Radiatorthermostaat"
+            "en": "Press the middle button on your Devolo Radiator Thermostat",
+            "nl": "Druk op de middelste knop van de Devolo Radiatorthermostaat"
           }
         },
         "associationGroups": 1
