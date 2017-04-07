@@ -260,19 +260,6 @@
             "filter": "driver_id=MT2653"
           }
         ]
-      },
-      {
-        "id": "battery_alarm",
-        "title": {
-          "en": "The battery alarm turned on",
-          "nl": "De batterijwaarschuwing gaat aan"
-        },
-        "args": [
-          {
-            "name": "device",
-            "type": "device"
-          }
-        ]
       }
     ]
   },
@@ -1566,14 +1553,15 @@
           373
         ],
         "productTypeId": [
-          14
+          2
         ],
         "productId": [
           14
         ],
         "learnmode": {
           "instruction": {
-            "en": "There are two tamper keys in the device, one is in the back side, another is in the front side.  Both of them  can add,  remove, reset or association from Z-Wave network.\nTo add into a Z-Wave network: \n1. Have Z-Wave  Controller entered inclusion mode.\n2. Pressing tamper key three times within 1.5 seconds to enter the inclusion mode.\n3. After add successful, the device will wake to receive the setting command from Z-Wave Controller about 20 seconds."
+            "en": "Press the tamper button on the back of the Door/Window Contact three times.",
+            "nl": "Druk drie keer op de knop achter op de Door/Window Contact."
           }
         },
         "associationGroups": [
@@ -1588,7 +1576,8 @@
           },
           "2": {
             "hint": {
-              "en": "Uses the \"Basic Set\" for control of other Z-Wave devices."
+              "en": "Uses the \"Basic Set\" for control of other Z-Wave devices.",
+              "nl": "Gebruikt de \"Basic Set\" voor het aansturen van andere Z-Wave apparaten."
             }
           }
         }
@@ -1597,7 +1586,7 @@
       "capabilities": [
         "alarm_contact",
         "alarm_tamper",
-        "measure_luminance_level",
+        "measure_luminance",
         "measure_temperature",
         "measure_battery"
       ],
@@ -1606,7 +1595,7 @@
         "small": "/drivers/MT2648/assets/images/small.png"
       },
       "mobile": {
-        "compontents": [
+        "components": [
           {
             "id": "icon"
           },
@@ -1620,7 +1609,7 @@
             "id": "sensor",
             "capabilities": [
               "alarm_contact",
-              "measure_luminance_level",
+              "measure_luminance",
               "measure_temperature",
               "alarm_tamper"
             ]
@@ -1636,32 +1625,14 @@
             "max": 255
           },
           "label": {
-            "en": "Basic Set Level",
-            "nl": "Basic Set waarde"
+            "en": "Basic set level",
+            "nl": "Basic set waarde"
           },
           "hint": {
-            "en": "Setting the BASIC command value to turn on the light(s). The 255 means turn on the light. For dimmer equipment 1 to 99 means the light strength.",
-            "nl": "De waarde die wordt gestuurd tijdens het BASIC commando om het licht aan te zetten. Waarde 255 is verlichting Aan. Voor dimmers kan het bereik 1 - 99 worden gebruikt om de dim-sterkte in te stellen."
+            "en": "Setting the basic command value that will be send to associated Z-Wave devices.",
+            "nl": "Stel hier de basic command waarde in die wordt verstuurd naar geassocieerde Z-Wave devices."
           },
           "value": 255
-        },
-        {
-          "id": "turn_off_light_time",
-          "type": "number",
-          "attr": {
-            "min": 24,
-            "max": 1016,
-            "step": 8
-          },
-          "value": 32,
-          "label": {
-            "en": "Motion alarm cancellation delay",
-            "nl": "Bewegingsalarm annuleringsperiode"
-          },
-          "hint": {
-            "en": "Motion alarm cancellation and Turn lights off (Off command to Association Group 2) after these amount of seconds, in steps of 8 seconds. Range: 24 - 1016",
-            "nl": "Bewegings alarm annulering and Zet verlichting uit (Uit commando naar Associatie Groep 2) na deze hoeveelheid seconden, in stappen van 8 seconden. Bereik: 24 - 1016"
-          }
         },
         {
           "id": "light_sensitivity",
@@ -1671,154 +1642,82 @@
             "max": 100
           },
           "label": {
-            "en": "Motion, Brightness Threshold",
-            "nl": "Beweging, Helderheid Drempel"
+            "en": "Illumination threshold",
+            "nl": "Verlichtingsdrempel"
           },
           "hint": {
-            "en": "The illummination threshold (in percentage) to turn on the light on movement (Association Group 2). Range: 0 (Off, never turn on light), 1 - 99, 100 (Always turn light on). Only in 1 - 99 range it will update lux value",
-            "nl": "De drempelwaarde (in percentage) voor de lichtsensor om het licht aan te schakelen bij beweging (Associatie Groep 2). Bereik: 0 (Uit, zet nooit licht aan), 1 - 99 , 100 (Zet altijd licht aan). Alleen in het 1 - 99 bereik zal de lux waarde worden geupdate"
+            "en": "The illummination threshold (%) to turn on the light (on associated devices) on movement. Range: 0 (off, never turn on light), 1 - 99, 100 (always turn light on).",
+            "nl": "De drempelwaarde (%) voor de lichtsensor om het licht in te schakelen (geassocieerde apparaten) bij beweging. Bereik: 0 (uit, zet nooit licht aan), 1 - 99 , 100 (zet altijd licht aan)."
           },
           "value": 99
-        },
-        {
-          "id": "test_mode",
-          "type": "checkbox",
-          "value": false,
-          "label": {
-            "en": "Test Mode",
-            "nl": "Test Modus"
-          },
-          "hint": {
-            "en": "Should the sensor be in test mode, or be in operation mode",
-            "nl": "Moet de sensor in test modus zijn, of in werking modus zijn."
-          }
-        },
-        {
-          "id": "operation_mode",
-          "type": "dropdown",
-          "value": "0",
-          "values": [
-            {
-              "id": "0",
-              "label": {
-                "en": "Home Automation Mode",
-                "nl": "Huis Automatisering Modus"
-              }
-            },
-            {
-              "id": "1",
-              "label": {
-                "en": "Security Mode",
-                "nl": "Beveiliging Modus"
-              }
-            }
-          ],
-          "label": {
-            "en": "Operation Mode",
-            "nl": "Werking Modus"
-          },
-          "hint": {
-            "en": "Security = Always send Motion Alarms & Selectable PIR sleep timer. Home Automation = Motion on lux treshold & PIR inactive for 6 seconds.",
-            "nl": "Beveiliging = Altijd beweging melden & selecteerbare inactieve beweging timer. Huis Automatisering = Beweging onder Lux Drempel & Beweging inactief voor 6 seconden."
-          }
-        },
-        {
-          "id": "door/window_mode",
-          "type": "checkbox",
-          "value": false,
-          "label": {
-            "en": "Disable Door/Window Sensor",
-            "nl": "Deactiveer Deur/Raam Sensor"
-          },
-          "hint": {
-            "en": "Should the sensor have the door/window sensor be disabled. (only used in STM02)",
-            "nl": "Moet de sensor de deur/raam sensor deactief zijn. (Alleen gebruikt in STM02)"
-          }
-        },
-        {
-          "id": "temperature_monitoring",
-          "type": "checkbox",
-          "value": false,
-          "label": {
-            "en": "Enable temperature monitoring",
-            "nl": "Activeer temperatuur monitoring"
-          },
-          "hint": {
-            "en": "When enabled, it will report whenever the temperature has changed 1.5 degree Celcius. If the temperature is over 60 degrees Celcius, it will report every 64 seconds.",
-            "nl": "Indien ingeschakeld dan stuurt het een temperatuur rapport als de temperatuur anderhalve graad Celcius wijzigt. Als het warmer is als 60 graden Celcius dan stuurt het iedere 64 seconden een temperatuurrapport."
-          }
         },
         {
           "id": "battery_report_time",
           "type": "number",
           "attr": {
-            "min": 0.5,
-            "max": 63.5,
-            "step": 0.5
+            "min": 0,
+            "max": 127
           },
           "label": {
-            "en": "Battery Level Report Interval",
-            "nl": "Batterijniveau Verzend Interval"
+            "en": "Battery level report interval",
+            "nl": "Batterijniveau verzend interval"
           },
           "hint": {
-            "en": "The interval time (in hours) for auto report the actual battery level. Range: 0.5 - 63.5",
-            "nl": "Een vast interval (in uren) om een rapport te sturen over het actuele batterij niveau. Bereik: 0,5 - 63,5"
+            "en": "The interval time (in hours) for auto report the actual battery level. Range: 0 - 127.",
+            "nl": "Een vast interval (in uren) om een update te sturen over het actuele batterij niveau. Bereik: 0 - 127."
           },
-          "value": 6
+          "value": 12
         },
         {
           "id": "contact_report_time",
           "type": "number",
           "attr": {
-            "min": 0.5,
-            "max": 63.5,
-            "step": 0.5
+            "min": 0,
+            "max": 127
           },
           "label": {
-            "en": "Door/Window Report Interval",
-            "nl": "Deur/Raam Verzend Interval"
+            "en": "Door/Window report interval",
+            "nl": "Deur/Raam verzend interval"
           },
           "hint": {
-            "en": "The interval time (in hours) for auto report of the actual door/window state. Range: 0.5 - 63.5",
-            "nl": "Een vast interval (in uren) om een rapport te sturen over de actuele deur/raam status. Bereik: 0,5 - 63,5"
+            "en": "The interval time (in hours) for auto report of the actual door/window state. Range: 0 - 127.",
+            "nl": "Een vast interval (in uren) om een rapport te sturen over de actuele deur/raam status. Bereik: 0 - 127."
           },
-          "value": 6
+          "value": 12
         },
         {
           "id": "illumination_report_time",
           "type": "number",
           "attr": {
-            "min": 0.5,
-            "max": 63.5,
-            "step": 0.5
+            "min": 0,
+            "max": 127
           },
           "label": {
-            "en": "Illumination Report Interval",
-            "nl": "Helderheid Verzend Interval"
+            "en": "Illumination report interval",
+            "nl": "Helderheid verzend interval"
           },
           "hint": {
-            "en": "The interval time (in hours) for auto report of the illumination. Range: 0.5 - 63.5",
-            "nl": "Een vast interval (in uren) om een rapport te sturen over de gemeten helderheid. Bereik: 0,5 - 63,5"
+            "en": "The interval time (in hours) for auto report of the illumination. Range: 0 - 127.",
+            "nl": "Een vast interval (in uren) om een rapport te sturen over de gemeten helderheid. Range: 0 - 127."
           },
-          "value": 2
+          "value": 12
         },
         {
           "id": "temperature_report_time",
           "type": "number",
           "attr": {
-            "min": 0.5,
-            "max": 63.5,
-            "step": 0.5
+            "min": 0,
+            "max": 127
           },
           "label": {
-            "en": "Temperature Report Interval",
-            "nl": "Temperatuur Verzend Interval"
+            "en": "Temperature report interval",
+            "nl": "Temperatuur verzend interval"
           },
           "hint": {
-            "en": "The interval time (in hours) for auto report of the temperature. Range: 0.5 - 63.5",
-            "nl": "Een vast interval (in uren) om een rapport te sturen over de temperatuur. Bereik: 0,5 - 63,5"
+            "en": "The interval time (in hours) for auto report of the temperature. Range: 0 - 127.",
+            "nl": "Een vast interval (in uren) om een rapport te sturen over de temperatuur. Range: 0 - 127."
           },
-          "value": 2
+          "value": 12
         }
       ]
     },
