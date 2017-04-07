@@ -101,9 +101,7 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 			index: 2,
 			size: 1,
 			signed: false,
-			parser: input => {
-				return new Buffer([(input >= 100 && input < 255) ? 255 : input]);
-			},
+			parser: input => new Buffer([(input >= 100 && input < 255) ? 255 : input]),
 		},
 		pir_sensitivity: {
 			index: 3,
