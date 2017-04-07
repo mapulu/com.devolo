@@ -2075,14 +2075,15 @@
           373
         ],
         "productTypeId": [
-          17
+          1
         ],
         "productId": [
           17
         ],
         "learnmode": {
           "instruction": {
-            "en": "1.  Put your Z-Wave controller into inclusion mode by following the instructions provided by the controller manufacturer. \n2.  Pressing On/Off button three times within 2 seconds will enter inclusion \n     mode on the switch. "
+            "en": "Put the Metering Plug in a socket or press the button on the front of the device three times to start inclusion.",
+            "nl": "Stop de Metering Plug in het stopcontact of druk drie keer op de knop aan de voorkant van het apparaat om het toevoegen te starten."
           }
         },
         "associationGroups": [
@@ -2091,7 +2092,8 @@
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Z-Wave Plus Lifeline"
+              "en": "Z-Wave Plus Lifeline, do not remove this association group or the device will stop functioning as expected.",
+              "nl": "Z-Wave Plus Lifeline, verwijder deze associatie groep niet, anders zal het apparaat niet meer functioneren zoals verwacht."
             }
           }
         }
@@ -2111,10 +2113,12 @@
           "id": "1",
           "value": 720,
           "label": {
-            "en": "Watt Meter Report Period"
+            "en": "Watt interval reporting",
+            "nl": "Watt interval updates"
           },
           "hint": {
-            "en": "This configuration parameter determines how often meter reporting of instantaneous watt usage is reported automatically.  Each unit is 5 seconds.    The maximum interval to report its instant power consumption is 45 hours (5s*32767/3600=45hr)."
+            "en": "This parameter determines how often meter reporting of instantaneous Watt usage is reported automatically. Time between reports is value of this parameter times 5.",
+            "nl": "Deze parameter bepaald hoe vaak er updates worden verstuurd met de Watt waarde. De tijd tussen updates is de waarde van deze parameter keer 5."
           },
           "type": "number",
           "attr": {
@@ -2126,10 +2130,12 @@
           "id": "2",
           "value": 6,
           "label": {
-            "en": "KWH Meter Report Period:"
+            "en": "kWh interval reporting",
+            "nl": "kWh interval updates"
           },
           "hint": {
-            "en": "This parameter controls the frequency at which the kWh value of the meter is reported to the node in association group 1.  This setting is in units of 10 minutes. The maximum interval to report its Accumulated Power Consumption (KW/h) is 227.55 days (10min*32767/1440=227.55 days)."
+            "en": "This parameter determines how often meter reporting of instantaneous kWh usage is reported automatically. Time between reports is value of this parameter times 10.",
+            "nl": "Deze parameter bepaald hoe vaak er updates worden verstuurd met de kWh waarde. De tijd tussen updates is de waarde van deze parameter keer 10."
           },
           "type": "number",
           "attr": {
@@ -2138,86 +2144,36 @@
           }
         },
         {
-          "id": "3",
-          "value": 1300,
-          "label": {
-            "en": "Threshold of current for Load Caution"
-          },
-          "hint": {
-            "en": "This is a warning when the current of load over the preset threshold value, if the setting value is 1300, when the load current of Relay1 over this value, Home Control Metering Plug will send current meter report to warn the Group1 node, the Range of the setting value is from 10 to 1300,and the default value is 1300."
-          },
-          "type": "number",
-          "attr": {
-            "min": 10,
-            "max": 1300
-          }
-        },
-        {
-          "id": "4",
-          "value": 10000,
-          "label": {
-            "en": "Threshold of KWh for Load Caution"
-          },
-          "hint": {
-            "en": "This is a warning when the KWh of load over the preset threshold value, If the \nsetting value is 10000, when the Accumulated Power Consumption of Relay1 over this value, Home Control Metering Plug will send KWH meter report to warn the Group1 node, \nminimum value is 1KWh and default value is 10000 kWh."
-          },
-          "type": "number",
-          "attr": {
-            "min": 1,
-            "max": 10000
-          }
-        },
-        {
           "id": "5",
           "value": "1",
           "label": {
-            "en": "Restore switch state mode"
+            "en": "Restore switch state after powerloss",
+            "nl": "Herstel schakelstatus na stroomonderbreking"
           },
           "hint": {
-            "en": "Whenever the AC power return from lost, Home Control Metering Plug will restore the switch state which could be SWITCH OFF、LAST SWITCH STATE、SWITCH ON. The default setting is LAST SWITCH STATE. "
+            "en": "When a powerloss occured, the switch will restore the state as set in this parameter.",
+            "nl": "Wanneer er een stroomonderbreking heeft plaatsgevonden zal de schakelstatus worden hersteld naar de status ingesteld met deze parameter."
           },
           "values": [
             {
               "id": "0",
               "label": {
-                "en": "Upon the return of AC power, the switch will remain Off."
+                "en": "Remain off",
+                "nl": "Laat uit"
               }
             },
             {
               "id": "1",
               "label": {
-                "en": "Upon the return of AC power, the switch will return to the state it was in when the power was turned off."
+                "en": "Previous state",
+                "nl": "Vorige status"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "Upon the return of AC power, the switch will turn On."
-              }
-            }
-          ],
-          "type": "dropdown"
-        },
-        {
-          "id": "6",
-          "value": "1",
-          "label": {
-            "en": "Mode of switch off function"
-          },
-          "hint": {
-            "en": "This configuration parameter determines how the switch will respond to a received SWITCH OFF command."
-          },
-          "values": [
-            {
-              "id": "0",
-              "label": {
-                "en": "SWITCH OFF commands received are ignored."
-              }
-            },
-            {
-              "id": "1",
-              "label": {
-                "en": "SWITCH OFF commands received are honored."
+                "en": "Turn on",
+                "nl": "Zet aan"
               }
             }
           ],
@@ -2225,30 +2181,31 @@
         },
         {
           "id": "7",
-          "value": "1",
+          "value": "0",
           "label": {
-            "en": "LED indication mode"
-          },
-          "hint": {
-            "en": "This parameter determines the state of the LED display."
+            "en": "LED indication mode",
+            "nl": "LED indicatie modus"
           },
           "values": [
             {
-              "id": "0",
-              "label": {
-                "en": "The LED follows the state of the switch."
-              }
-            },
-            {
               "id": "1",
               "label": {
-                "en": "Night Mode - When the switch is On, the LED is Off, and when the switch is Off, the LED is On."
+                "en": "Follow the state of the switch",
+                "nl": "Schakelstatus"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "Flash Mode - When the state of the switch changes, the LED will be on for one second and then will turn off."
+                "en": "Night mode",
+                "nl": "Nacht modus"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Flash mode",
+                "nl": "Knipper modus"
               }
             }
           ],
@@ -2258,53 +2215,18 @@
           "id": "8",
           "value": 0,
           "label": {
-            "en": "Auto off timer"
+            "en": "Auto off",
+            "nl": "Schakel automatisch uit"
           },
           "hint": {
-            "en": "Automatic Shut-Off Setting.  This parameter determines the amount of time before the switch is automatically turned off after it has been turned on."
+            "en": "This parameter determines if and how long after the switch has been turned on it will be automatically turned off.",
+            "nl": "Deze parameter bepaald of en hoelang nadat de schakelaar aan is gezet hij automatisch weer wordt uitgezet."
           },
           "type": "number",
           "attr": {
             "min": 0,
             "max": 32767
           }
-        },
-        {
-          "id": "9",
-          "value": "0",
-          "label": {
-            "en": "RF off command mode"
-          },
-          "hint": {
-            "en": "This parameter determines how the switch responds to the receipt of a SWITCH_ALL_OFF command."
-          },
-          "values": [
-            {
-              "id": "0",
-              "label": {
-                "en": "When SWITCH ALL OFF is received, the MT02646 turns Off."
-              }
-            },
-            {
-              "id": "1",
-              "label": {
-                "en": "When SWITCH ALL OFF is received, the MT02646 ignores the command and does nothing."
-              }
-            },
-            {
-              "id": "2",
-              "label": {
-                "en": "When SWITCH ALL OFF is received, the MT02646 will turn On if it is Off, and will turn Off if it is On."
-              }
-            },
-            {
-              "id": "3",
-              "label": {
-                "en": "When SWITCH ALL OFF is received, the MT02646 turns On."
-              }
-            }
-          ],
-          "type": "dropdown"
         }
       ]
     }
