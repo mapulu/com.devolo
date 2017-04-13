@@ -6,7 +6,6 @@ const ZwaveDriver = require('homey-zwavedriver');
 // http://products.z-wavealliance.org/products/1143
 
 module.exports = new ZwaveDriver(path.basename(__dirname), {
-	debug: true,
 	capabilities: {
 		measure_battery: {
 			command_class: 'COMMAND_CLASS_BATTERY',

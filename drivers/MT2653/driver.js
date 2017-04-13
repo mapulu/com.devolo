@@ -6,7 +6,6 @@ const ZwaveDriver = require('homey-zwavedriver');
 // http://www.cd-jackson.com/index.php/zwave/zwave-device-database/zwave-device-list/devicesummary/341
 
 module.exports = new ZwaveDriver(path.basename(__dirname), {
-	debug: true,
 	capabilities: {
 		measure_battery: {
 			command_class: 'COMMAND_CLASS_BATTERY',
