@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="990px" height="790px" viewBox="0 0 990 790" preserveAspectRatio="xMidYMid meet" ><rect id="svgEditorBackground" x="0" y="0" width="990" height="790" style="fill: none; stroke: none;"/><rect x="10" y="10" stroke="black" id="e1_rectangle" style="stroke-width: 2px; fill: none;" width="500" height="450"/><g id="e15_group" transform="matrix(0.997092 0 0 1 0.256079 0)"><rect x="40" y="40" stroke="black" id="e2_rectangle" style="stroke-width: 1px;" width="70" height="70" fill="deepskyblue"/><rect x="40" y="360" stroke="black" id="e3_rectangle" style="stroke-width: 1px; fill: none;" width="70" height="70"/><rect x="410" y="360" stroke="black" id="e5_rectangle" style="stroke-width: 1px; fill: none;" width="70" height="70"/></g><rect x="410" y="40" stroke="black" id="e4_rectangle" style="stroke-width: 1px; fill: none;" width="70" height="70"/><circle id="e6_circle" cx="110" cy="150" stroke="black" style="stroke-width: 2px; fill: none;" r="15" /><text fill="black" x="60" y="226" id="e7_texte" style="font-family: Arial; font-size: 30px;"  dx="" dy="">TOP</text><polyline stroke="black" id="e8_polyline" style="fill: none; stroke-width: 2px;" points="57 199 122 198 89 166 56 198" /><text fill="black" x="40.0163" y="38.7144" id="e9_texte" style="font-family: Arial; font-size: 20px;"></text><text fill="black" x="50.0163" y="48.7144" id="e10_texte" style="font-family: Arial; font-size: 20px;"></text><text fill="black" x="60.0163" y="90.7144" id="e11_texte" style="font-family: &quot;Arial Black&quot;; font-size: 40px;" dx="" dy="" >1</text><text fill="black" x="431.016" y="87.7144" id="e12_texte" style="font-family: &quot;Arial Black&quot;; font-size: 40px;" dx="" dy="" >2</text><text fill="black" x="61.016" y="411.714" id="e13_texte" style="font-family: &quot;Arial Black&quot;; font-size: 40px;" dx="" dy="" >3</text><text fill="black" x="431.016" y="410.714" id="e14_texte" style="font-family: &quot;Arial Black&quot;; font-size: 40px;" dx="" dy="" >4</text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 353.2 353.2" style="enable-background:new 0 0 353.2 353.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#296FB6;}
+</style>
+<g>
+	<path d="M332.6,348.9H20.7c-9,0-16.3-7.3-16.3-16.3V20.7c0-9,7.3-16.3,16.3-16.3h311.9c9,0,16.3,7.3,16.3,16.3v311.9
+		C348.9,341.6,341.6,348.9,332.6,348.9z M20.7,8.7c-6.6,0-12,5.4-12,12v311.9c0,6.6,5.4,12,12,12h311.9c6.6,0,12-5.4,12-12V20.7
+		c0-6.6-5.4-12-12-12C332.6,8.7,20.7,8.7,20.7,8.7z"/>
+</g>
+<g>
+	<path d="M300,312H53.4c-6,0-10.9-4.9-10.9-10.9V54.4c0-6,4.9-10.9,10.9-10.9H300c6,0,10.9,4.9,10.9,10.9V301
+		C310.9,307.1,306,312,300,312z M53.4,44.9c-5.2,0-9.5,4.3-9.5,9.5V301c0,5.2,4.3,9.5,9.5,9.5H300c5.2,0,9.5-4.3,9.5-9.5V54.4
+		c0-5.2-4.3-9.5-9.5-9.5H53.4z"/>
+</g>
+<g>
+	<path d="M300,308.1H53.4c-3.9,0-7-3.2-7-7V54.4c0-3.9,3.2-7,7-7H300c3.9,0,7,3.2,7,7V301C307,304.9,303.9,308.1,300,308.1z
+		 M53.4,49.5c-2.7,0-4.9,2.2-4.9,4.9V301c0,2.7,2.2,4.9,4.9,4.9H300c2.7,0,4.9-2.2,4.9-4.9V54.4c0-2.7-2.2-4.9-4.9-4.9H53.4z"/>
+</g>
+<g>
+	<rect x="175.6" y="48.5" width="2.1" height="258.6"/>
+</g>
+<g>
+	<path class="st0" d="M172.4,302.8V52.7h-119c-0.2,0-0.5,0-0.7,0.1c-0.1,0.1-0.3,0.1-0.4,0.2l-0.1,0.1c-0.3,0.3-0.5,0.7-0.5,1.2
+		v246.6c0,0.2,0,0.5,0.1,0.7s0.2,0.4,0.4,0.6c0.3,0.3,0.7,0.5,1.2,0.5L172.4,302.8L172.4,302.8z"/>
+</g>
+<g>
+	<path class="st0" d="M180.9,52.7v250.1H300c0.2,0,0.5,0,0.7-0.1s0.4-0.2,0.6-0.4l0.1-0.1c0.1-0.1,0.2-0.3,0.2-0.4
+		c0.1-0.2,0.1-0.4,0.1-0.7V54.4c0-0.2,0-0.5-0.1-0.7s-0.2-0.4-0.4-0.5l0,0l0,0l0,0c-0.2-0.2-0.3-0.3-0.5-0.4
+		c-0.2-0.1-0.4-0.1-0.7-0.1H180.9z"/>
+</g>
+</svg>
