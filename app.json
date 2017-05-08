@@ -3,7 +3,7 @@
   "name": {
     "en": "Devolo"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "compatibility": ">=1.0.2",
   "description": {
     "en": "Devolo Home Control z-wave devices for Homey",
@@ -52,38 +52,10 @@
         ]
       },
       {
-        "id": "mt2652_btn1_double",
-        "title": {
-          "en": "Button 1 double press",
-          "nl": "Twee keer gedrukt op knop 1"
-        },
-        "args": [
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=MT2652"
-          }
-        ]
-      },
-      {
         "id": "mt2652_btn2_single",
         "title": {
           "en": "Button 2 single press",
           "nl": "Een keer gedrukt op knop 2"
-        },
-        "args": [
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=MT2652"
-          }
-        ]
-      },
-      {
-        "id": "mt2652_btn2_double",
-        "title": {
-          "en": "Button 2 double press",
-          "nl": "Twee keer gedrukt op knop 2"
         },
         "args": [
           {
@@ -108,38 +80,10 @@
         ]
       },
       {
-        "id": "mt2652_btn3_double",
-        "title": {
-          "en": "Button 3 double press",
-          "nl": "Twee keer gedrukt op knop 3"
-        },
-        "args": [
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=MT2652"
-          }
-        ]
-      },
-      {
         "id": "mt2652_btn4_single",
         "title": {
           "en": "Button 4 single press",
           "nl": "Een keer gedrukt op knop 4"
-        },
-        "args": [
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=MT2652"
-          }
-        ]
-      },
-      {
-        "id": "mt2652_btn4_double",
-        "title": {
-          "en": "Button 4 double press",
-          "nl": "Twee keer gedrukt op knop 4"
         },
         "args": [
           {
