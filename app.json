@@ -215,8 +215,8 @@
         "unlearnmode": {
           "image": "/drivers/MT2652/assets/learnmode.svg",
           "instruction": {
-            "en": "Activate exclusion on the device by pressing any one of the four buttons for one second.",
-            "nl": "Om het apparaat te verwijderen, druk langer dan één seconde op één van de knoppen van de schakelaar."
+            "en": "Activate exclusion on the device by putting the device in \"Management Mode\", afterwards press any one of the four buttons for one second.",
+            "nl": "Om het apparaat te verwijderen, zet het apparaat in \"Management Modus\",druk vervolgens langer dan één seconde op één van de knoppen van de schakelaar."
           }
         },
         "associationGroups": [
