@@ -258,19 +258,19 @@
             {
               "id": "0",
               "label": {
-                "en": "In pair with double clicks"
+                "en": "seperately"
               }
             },
             {
               "id": "1",
               "label": {
-                "en": "seperately"
+                "en": "In pair without double clicks"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "In pair without double clicks"
+                "en": "In pair with double clicks"
               }
             }
           ],
@@ -289,49 +289,49 @@
             {
               "id": "0",
               "label": {
-                "en": "Send Preconfigured Scenes"
+                "en": "Disabled"
               }
             },
             {
               "id": "1",
               "label": {
-                "en": "Control DoorLock"
+                "en": "Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "Central Scene to Gateway"
+                "en": "Switch On/Off only (send Basic Set)"
               }
             },
             {
               "id": "3",
               "label": {
-                "en": "Disabled"
+                "en": "Switch All"
               }
             },
             {
               "id": "4",
               "label": {
-                "en": "Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
+                "en": "Send Scenes"
               }
             },
             {
               "id": "5",
               "label": {
-                "en": "Switch On/Off only (send Basic Set)"
-              }
-            },
-            {
-              "id": "6",
-              "label": {
-                "en": "Switch All"
+                "en": "Send Preconfigured Scenes"
               }
             },
             {
               "id": "7",
               "label": {
-                "en": "Send Scenes"
+                "en": "Control DoorLock"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                "en": "Central Scene to Gateway "
               }
             }
           ],
@@ -350,49 +350,49 @@
             {
               "id": "0",
               "label": {
-                "en": "Send Scenes"
+                "en": "Disabled"
               }
             },
             {
               "id": "1",
               "label": {
-                "en": "Switch All"
+                "en": "Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "Send Preconfigured Scenes"
+                "en": "Switch On/Off only (send Basic Set)"
               }
             },
             {
               "id": "3",
               "label": {
-                "en": "Control DoorLock"
+                "en": "Switch All"
               }
             },
             {
               "id": "4",
               "label": {
-                "en": "Central Scene to Gateway "
+                "en": "Send Scenes"
               }
             },
             {
               "id": "5",
               "label": {
-                "en": "Disabled"
-              }
-            },
-            {
-              "id": "6",
-              "label": {
-                "en": "Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
+                "en": "Send Preconfigured Scenes"
               }
             },
             {
               "id": "7",
               "label": {
-                "en": "Switch On/Off only (send Basic Set)"
+                "en": "Control DoorLock"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                "en": "Central Scene to Gateway "
               }
             }
           ],
@@ -445,13 +445,13 @@
               }
             },
             {
-              "id": "6",
+              "id": "7",
               "label": {
                 "en": "Control DoorLock"
               }
             },
             {
-              "id": "7",
+              "id": "8",
               "label": {
                 "en": "Central Scene to Gateway "
               }
@@ -472,13 +472,13 @@
             {
               "id": "0",
               "label": {
-                "en": "Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
+                "en": "Disabled"
               }
             },
             {
               "id": "1",
               "label": {
-                "en": "Disabled"
+                "en": "Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
               }
             },
             {
@@ -506,13 +506,13 @@
               }
             },
             {
-              "id": "6",
+              "id": "7",
               "label": {
                 "en": "Control DoorLock"
               }
             },
             {
-              "id": "7",
+              "id": "8",
               "label": {
                 "en": "Central Scene to Gateway "
               }
@@ -533,7 +533,7 @@
             {
               "id": "0",
               "label": {
-                "en": "In pair with double clicks"
+                "en": "seperately"
               }
             },
             {
@@ -545,7 +545,7 @@
             {
               "id": "2",
               "label": {
-                "en": "seperately"
+                "en": "In pair with double clicks"
               }
             }
           ],
@@ -562,19 +562,19 @@
           },
           "values": [
             {
-              "id": "0",
+              "id": "1",
               "label": {
                 "en": "Switch off only"
               }
             },
             {
-              "id": "1",
+              "id": "2",
               "label": {
                 "en": "Switch on only"
               }
             },
             {
-              "id": "2",
+              "id": "255",
               "label": {
                 "en": "Switch all on and off"
               }
@@ -595,13 +595,13 @@
             {
               "id": "0",
               "label": {
-                "en": "Yes"
+                "en": "No"
               }
             },
             {
               "id": "1",
               "label": {
-                "en": "No"
+                "en": "Yes"
               }
             }
           ],
