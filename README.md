@@ -3,6 +3,8 @@
 This app adds support for Devolo z-wave devices in Homey.
 
 ###Changelog
+Version 1.1.3
+- Round temperature values to one decimal instead of two
 
 Version 1.1.2
 - Fixed configuration parameters for MT2652 (Scene Switch)
