@@ -1,0 +1,492 @@
+[
+  {
+    "id": "1",
+    "value": "1",
+    "label": {
+      "en": "Button 1 and 3 mode",
+      "nl": "Knop 1 en 3 modus"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the mode of operation.Separate mode: Button 1 is linked to group A, button 3 to group C. On/off is linked to single/double click. dimming up/down is linked to hold/click&hold. Pair mode: Button 1 is up, Button 3 is down. Click is on/off, hold is dimming up/down.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de operatiemodus van het apparaat. Apart: Knop 1 is gelinkt aan groep A, knop 3 is gelinkt aan groep C. Enkel/Tweemaal drukken is aan/uit. Inhouden/drukken&inhouden is voor dimmen. Samen: Knop 1 is omhoog, knop 3 is onmlaag, drukken is aan/uit, inhouden is voor dimmen."
+    },
+    "zwave": {
+      "index": 1,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "seperately",
+          "nl": "Apart"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "In pair without double clicks",
+          "nl": "Samen zonder dubbel drukken"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "In pair with double clicks",
+          "nl": "Samen met dubbel drukken"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "11",
+    "value": "8",
+    "label": {
+      "en": "Command to Control Group A",
+      "nl": "Commando controle groep A"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group A when the related button is pressed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het commando dat verstuurd wordt naar apparaten in groep A wanneer de knop wordt ingedrukt."
+    },
+    "zwave": {
+      "index": 11,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled",
+          "nl": "Uitgeschakelt"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+          "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on/off only (send Basic Set)",
+          "nl": "Switch on/off (verstuur Basic Set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Switch all",
+          "nl": "Switch all"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Send scenes",
+          "nl": "Verstuur scenes"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Send preconfigured scenes",
+          "nl": "Verstuur voorgeprogrammeerde scenes"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "Control doorLock",
+          "nl": "Control doorlock"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "Central scene to gateway",
+          "nl": "Central scene naar controller"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "12",
+    "value": "8",
+    "label": {
+      "en": "Command to Control Group B",
+      "nl": "Commando controle groep B"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group A when the related button is pressed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het commando dat verstuurd wordt naar apparaten in groep A wanneer de knop wordt ingedrukt."
+    },
+    "zwave": {
+      "index": 12,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled",
+          "nl": "Uitgeschakelt"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+          "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on/off only (send Basic Set)",
+          "nl": "Switch on/off (verstuur Basic Set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Switch all",
+          "nl": "Switch all"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Send scenes",
+          "nl": "Verstuur scenes"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Send preconfigured scenes",
+          "nl": "Verstuur voorgeprogrammeerde scenes"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "Control doorLock",
+          "nl": "Control doorlock"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "Central scene to gateway",
+          "nl": "Central scene naar controller"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "13",
+    "value": "8",
+    "label": {
+      "en": "Command to Control Group C",
+      "nl": "Commando controle groep C"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group A when the related button is pressed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het commando dat verstuurd wordt naar apparaten in groep A wanneer de knop wordt ingedrukt."
+    },
+    "zwave": {
+      "index": 13,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled",
+          "nl": "Uitgeschakelt"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+          "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on/off only (send Basic Set)",
+          "nl": "Switch on/off (verstuur Basic Set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Switch all",
+          "nl": "Switch all"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Send scenes",
+          "nl": "Verstuur scenes"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Send preconfigured scenes",
+          "nl": "Verstuur voorgeprogrammeerde scenes"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "Control doorLock",
+          "nl": "Control doorlock"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "Central scene to gateway",
+          "nl": "Central scene naar controller"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "14",
+    "value": "8",
+    "label": {
+      "en": "Command to Control Group D",
+      "nl": "Commando controle groep D"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group A when the related button is pressed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het commando dat verstuurd wordt naar apparaten in groep A wanneer de knop wordt ingedrukt."
+    },
+    "zwave": {
+      "index": 14,
+      "size": 8
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled",
+          "nl": "Uitgeschakelt"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+          "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on/off only (send Basic Set)",
+          "nl": "Switch on/off (verstuur Basic Set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Switch all",
+          "nl": "Switch all"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Send scenes",
+          "nl": "Verstuur scenes"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Send preconfigured scenes",
+          "nl": "Verstuur voorgeprogrammeerde scenes"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "Control doorLock",
+          "nl": "Control doorlock"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "Central scene to gateway",
+          "nl": "Central scene naar controller"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "2",
+    "value": "1",
+    "label": {
+      "en": "Button 2 and 4 mode",
+      "nl": "Knop 2 en 4 modus"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the mode of operation.Separate mode: Button 2 is linked to group B, button 4 to group D. On/off is linked to single/double click. dimming up/down is linked to hold/click&hold. Pair mode: Button 1 is up, Button 3 is down. Click is on/off, hold is dimming up/down.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de operatiemodus van het apparaat. Apart: Knop 2 is gelinkt aan groep B, knop 4 is gelinkt aan groep D. Enkel/Tweemaal drukken is aan/uit. Inhouden/drukken&inhouden is voor dimmen. Samen: Knop 1 is omhoog, knop 3 is onmlaag, drukken is aan/uit, inhouden is voor dimmen."
+    },
+    "zwave": {
+      "index": 2,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "seperately",
+          "nl": "Apart"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "In pair without double clicks",
+          "nl": "Samen zonder dubbel drukken"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "In pair with double clicks",
+          "nl": "Samen met dubbel drukken"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "21",
+    "value": "1",
+    "label": {
+      "en": "Send the following Switch all commands",
+      "nl": "Verstuur de volgende Switch all commandos"
+    },
+    "zwave": {
+      "index": 21,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch off only",
+          "nl": "Alleen bij uitschakelen"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on only",
+          "nl": "Alleen bij inschakelen"
+        }
+      },
+      {
+        "id": "255",
+        "label": {
+          "en": "Switch all on and off",
+          "nl": "Bij in- en uitschakelen"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "22",
+    "value": false,
+    "label": {
+      "en": "Invert buttons",
+      "nl": "Knoppen omdraaien"
+    },
+    "zwave": {
+      "index": 22,
+      "size": 1
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "25",
+    "value": "1",
+    "label": {
+      "en": "Blocks wakeup even when wakeup interval is set",
+      "nl": "Blokkeer ontwaken zelfs wanneer er een interval is gezet"
+    },
+    "zwave": {
+      "index": 25,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Wakeup is blocked",
+          "nl": "Ontwaken is geblokkeerd"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Wakeup is not blocked",
+          "nl": "Ontwaken is niet geblokkeerd"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "30",
+    "value": "0",
+    "label": {
+      "en": "Send unsolicited Battery Report on Wake Up",
+      "nl": "Verstuur batterij updates bij ontwaken"
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "No",
+          "nl": "Nee"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "To same node as wake up notification",
+          "nl": "Naar dezelfde node als het onwaak bericht"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Broadcast",
+          "nl": "Broadcast"
+        }
+      }
+    ],
+    "type": "dropdown"
+  }
+]

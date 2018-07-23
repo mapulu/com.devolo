@@ -1,0 +1,90 @@
+{
+  "triggers": [
+    {
+      "id": "mt2652_scene",
+      "title": {
+        "en": "Scene is activated",
+        "nl": "Scene is geactiveerd"
+      },
+      "args": [
+        {
+          "name": "button",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Top left",
+                "nl": "Links boven"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Top right",
+                "nl": "Rechts boven"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Bottom left",
+                "nl": "Links onder"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Bottom right",
+                "nl": "Rechts onder"
+              }
+            }
+          ]
+        },
+        {
+          "name": "scene",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "Key Pressed 1 time",
+              "label": {
+                "en": "Pressed 1x",
+                "nl": "1x gedrukt"
+              }
+            },
+            {
+              "id": "Key Held Down",
+              "label": {
+                "en": "Hold press (5x a second)",
+                "nl": "Lang drukken (5x per seconde)"
+              }
+            },
+            {
+              "id": "Key Released",
+              "label": {
+                "en": "Press released",
+                "nl": "Drukken losgelaten"
+              }
+            },
+            {
+              "id": "Key Slide Up",
+              "label": {
+                "en": "Slide Up",
+                "nl": "Omhoog Schuiven"
+              }
+            },
+            {
+              "id": "Key Slide Down",
+              "label": {
+                "en": "Slide Down",
+                "nl": "Omlaag schuiven"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conditions": [],
+  "actions": []
+}
