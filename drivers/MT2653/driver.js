@@ -1,88 +1,34 @@
 'use strict';
 
-const path = require('path');
-const ZwaveDriver = require('homey-zwavedriver');
-
+const Homey = require('homey');
+const triggerMap = {
+    1: 'btn1_single',
+    2: 'btn2_single',
+    6: 'btn2_double',
+    5: 'btn3_single',
+    4: 'btn4_single',
+    8: 'btn4_double',
+};
 // http://www.cd-jackson.com/index.php/zwave/zwave-device-database/zwave-device-list/devicesummary/341
 
-module.exports = new ZwaveDriver(path.basename(__dirname), {
-	capabilities: {
-		measure_battery: {
-			command_class: 'COMMAND_CLASS_BATTERY',
-			command_get: 'BATTERY_GET',
-			command_report: 'BATTERY_REPORT',
-			command_report_parser: report => {
-				if (report['Battery Level'] === 'battery low warning') return 1;
-				if (report.hasOwnProperty('Battery Level (Raw)')) return report['Battery Level (Raw)'][0];
-				return null;
-			},
-		},
-	},
-	settings: {
-		1: {
-			size: 1,
-			index: 1,
-		},
-		2: {
-			size: 1,
-			index: 2,
-		},
-		11: {
-			size: 1,
-			index: 11,
-		},
-		12: {
-			size: 1,
-			index: 12,
-		},
-		13: {
-			size: 1,
-			index: 13,
-		},
-		14: {
-			size: 1,
-			index: 14,
-		},
-		21: {
-			size: 1,
-			index: 21,
-		},
-		22: {
-			size: 1,
-			index: 22,
-		},
-		25: {
-			size: 1,
-			index: 25,
-		},
-		30: {
-			size: 1,
-			index: 30,
-		},
-	},
-});
+class DevoloKeyFobDevice extends ZwaveDevice {
 
-// bind Flow
-module.exports.on('initNode', (token) => {
-	const node = module.exports.nodes[token];
-	if (node) {
-		node.instance.CommandClass.COMMAND_CLASS_CENTRAL_SCENE.on('report', (command, report) => {
-			if (command.name === 'CENTRAL_SCENE_NOTIFICATION') {
+	onMeshInit() {
+		this.btn1_single = new Homey.FlowCardTriggerDevice('mt2653_btn1_single');
+        this.btn2_single = new Homey.FlowCardTriggerDevice('mt2653_btn2_single');
+        this.btn2_double = new Homey.FlowCardTriggerDevice('mt2653_btn2_double');
+        this.btn3_single = new Homey.FlowCardTriggerDevice('mt2653_btn3_single');
+        this.btn4_single = new Homey.FlowCardTriggerDevice('mt2653_btn4_single');
+        this.btn4_double = new Homey.FlowCardTriggerDevice('mt2653_btn4_double');
 
-				const triggerMap = {
-					1: '1_single',
-					2: '2_single',
-					6: '2_double',
-					5: '3_single',
-					4: '4_single',
-					8: '4_double',
-				};
+        this.registerCapability('measure_battery', 'BATTERY');
 
-				const triggerId = triggerMap[report['Scene Number']];
-				if (triggerId) {
-					Homey.manager('flow').triggerDevice(`mt2653_btn${triggerId}`, null, null, node.device_data);
-				}
-			}
+		this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', (report) => {
+            const flowID = triggerMap[report['Scene Number']];
+            this[flowID].trigger(this, null, null);
 		});
 	}
-});
+
+}
+
+module.exports = DevoloKeyFobDevice;

@@ -1,0 +1,48 @@
+{
+  "triggers": [
+    {
+      "id": "mt2653_btn1_single",
+      "title": {
+        "en": "Button 1 single press",
+        "nl": "Een keer gedrukt op knop 1"
+      }
+    },
+    {
+      "id": "mt2653_btn2_single",
+      "title": {
+        "en": "Button 2 single press",
+        "nl": "Een keer gedrukt op knop 2"
+      }
+    },
+    {
+      "id": "mt2653_btn2_double",
+      "title": {
+        "en": "Button 2 double press",
+        "nl": "Twee keer gedrukt op knop 2"
+      }
+    },
+    {
+      "id": "mt2653_btn3_single",
+      "title": {
+        "en": "Button 3 single press",
+        "nl": "Een keer gedrukt op knop 3"
+      }
+    },
+    {
+      "id": "mt2653_btn4_single",
+      "title": {
+        "en": "Button 4 single press",
+        "nl": "Een keer gedrukt op knop 4"
+      }
+    },
+    {
+      "id": "mt2653_btn4_double",
+      "title": {
+        "en": "Button 4 double press",
+        "nl": "Twee keer gedrukt op knop 4"
+      }
+    }
+  ],
+  "conditions": [],
+  "actions": []
+}

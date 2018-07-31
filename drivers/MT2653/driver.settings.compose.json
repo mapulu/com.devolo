@@ -1,0 +1,314 @@
+[
+  {
+    "id": "11",
+    "value": "8",
+    "label": {
+      "en": "Command send to control group A",
+      "nl": "Commando dat naar groep A wordt verstuurd"
+    },
+    "hint": {
+      "en": "This parameter defines the command to be sent to devices in control group A when the related button is pressed.",
+      "nl": "Deze parameter bepaalt het commando dat wordt verstuurd naar apparaten in groep A wanneer de bijbehorende knop wordt ingedrukt."
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled",
+          "nl": "Uitgeschakeld"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch on/off and dim (send basic set and switch multilevel)",
+          "nl": "Schakel aan/uit en dim (verstuur basic set en switch multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on/off (send basic set)",
+          "nl": "Schakel aan/uit (verstuur basic set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Switch all",
+          "nl": "Schakel alles"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Send scenes",
+          "nl": "Verstuur scences"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Send preconfigured scenes",
+          "nl": "Verstuur vooraf ingestelde scences"
+        }
+      },
+      {
+        "id": "6",
+        "label": {
+          "en": "Control devices in proximity",
+          "nl": "Bestuur nabije apparaten"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "Control doorLock",
+          "nl": "Stuur deurslot aan"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "Central scene to gateway",
+          "nl": "Central scene naar gateway"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "12",
+    "value": "8",
+    "label": {
+      "en": "Command send to control group B",
+      "nl": "Commando dat naar groep B wordt verstuurd"
+    },
+    "hint": {
+      "en": "This parameter defines the command to be sent to devices in control group B when the related button is pressed.",
+      "nl": "Deze parameter bepaalt het commando dat wordt verstuurd naar apparaten in groep B wanneer de bijbehorende knop wordt ingedrukt."
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled",
+          "nl": "Uitgeschakeld"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch on/off and dim (send basic set and switch multilevel)",
+          "nl": "Schakel aan/uit en dim (verstuur basic set en switch multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on/off (send basic set)",
+          "nl": "Schakel aan/uit (verstuur basic set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Switch all",
+          "nl": "Schakel alles"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Send scenes",
+          "nl": "Verstuur scences"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Send preconfigured scenes",
+          "nl": "Verstuur vooraf ingestelde scences"
+        }
+      },
+      {
+        "id": "6",
+        "label": {
+          "en": "Control devices in proximity",
+          "nl": "Bestuur nabije apparaten"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "Control doorLock",
+          "nl": "Stuur deurslot aan"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "Central scene to gateway",
+          "nl": "Central scene naar gateway"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "13",
+    "value": "8",
+    "label": {
+      "en": "Command send to control group C",
+      "nl": "Commando dat naar groep C wordt verstuurd"
+    },
+    "hint": {
+      "en": "This parameter defines the command to be sent to devices in control group C when the related button is pressed.",
+      "nl": "Deze parameter bepaalt het commando dat wordt verstuurd naar apparaten in groep C wanneer de bijbehorende knop wordt ingedrukt."
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled",
+          "nl": "Uitgeschakeld"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch on/off and dim (send basic set and switch multilevel)",
+          "nl": "Schakel aan/uit en dim (verstuur basic set en switch multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on/off (send basic set)",
+          "nl": "Schakel aan/uit (verstuur basic set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Switch all",
+          "nl": "Schakel alles"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Send scenes",
+          "nl": "Verstuur scences"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Send preconfigured scenes",
+          "nl": "Verstuur vooraf ingestelde scences"
+        }
+      },
+      {
+        "id": "6",
+        "label": {
+          "en": "Control devices in proximity",
+          "nl": "Bestuur nabije apparaten"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "Control doorLock",
+          "nl": "Stuur deurslot aan"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "Central scene to gateway",
+          "nl": "Central scene naar gateway"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "14",
+    "value": "8",
+    "label": {
+      "en": "Command send to control group D",
+      "nl": "Commando dat naar groep D wordt verstuurd"
+    },
+    "hint": {
+      "en": "This parameter defines the command to be sent to devices in control group D when the related button is pressed.",
+      "nl": "Deze parameter bepaalt het commando dat wordt verstuurd naar apparaten in groep D wanneer de bijbehorende knop wordt ingedrukt."
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled",
+          "nl": "Uitgeschakeld"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Switch on/off and dim (send basic set and switch multilevel)",
+          "nl": "Schakel aan/uit en dim (verstuur basic set en switch multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Switch on/off (send basic set)",
+          "nl": "Schakel aan/uit (verstuur basic set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Switch all",
+          "nl": "Schakel alles"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Send scenes",
+          "nl": "Verstuur scences"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Send preconfigured scenes",
+          "nl": "Verstuur vooraf ingestelde scences"
+        }
+      },
+      {
+        "id": "6",
+        "label": {
+          "en": "Control devices in proximity",
+          "nl": "Bestuur nabije apparaten"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "Control doorLock",
+          "nl": "Stuur deurslot aan"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "Central scene to gateway",
+          "nl": "Central scene naar gateway"
+        }
+      }
+    ],
+    "type": "dropdown"
+  }
+]

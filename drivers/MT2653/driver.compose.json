@@ -1,0 +1,83 @@
+{
+  "name": {
+    "en": "Home Control Keyfob"
+  },
+  "zwave": {
+    "manufacturerId": 373,
+    "productTypeId": [
+      256
+    ],
+    "productId": [
+      258
+    ],
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "When in factory default push button 1 shortly to start inclusion.",
+        "nl": "Als de Keyfob in standaard fabrieksmodus staat, druk dan kort op knop 1 om het apparaat toe te voegen."
+      }
+    },
+    "unlearnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "When in factory default push button 1 shortly to start exclusion.",
+        "nl": "Als de Keyfob in standaard fabrieksmodus staat, druk dan kort op knop 1 om het apparaat te verwijderen."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Z-Wave Plus Lifeline"
+        }
+      },
+      "2": {
+        "hint": {
+          "en": "Control Group A, controlled by button 1 or single clicks of buttons 1 and 3",
+          "nl": "Groep A, aangestuurd door knop 1 of enkele druk op knoppen 1 en 3"
+        }
+      },
+      "3": {
+        "hint": {
+          "en": "Control Group B, controlled by button 2 or single clicks of buttons 2 and 4",
+          "nl": "Groep B aangestuurd door knop 2 of enkele druk op knoppen 2 en 4"
+        }
+      },
+      "4": {
+        "hint": {
+          "en": "Control Group C, controlled by button 3 or double clicks of buttons 1 and 3",
+          "nl": "Groep C, aangestuurd door knop 3 of enkele druk op knoppen 1 en 3"
+        }
+      },
+      "5": {
+        "hint": {
+          "en": "Control Group D, controlled by button 4 or double clicks of buttons 2 and 4",
+          "nl": "Groep D, aangestuurd door knop 4 of enkele druk op knoppen 2 en 4"
+        }
+      }
+    }
+  },
+  "mobile": {
+    "components": [
+      {
+        "id": "icon"
+      },
+      {
+        "id": "battery",
+        "capabilities": [
+          "measure_battery"
+        ]
+      }
+    ]
+  },
+  "class": "light",
+  "capabilities": [
+    "measure_battery"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  }
+}
