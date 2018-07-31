@@ -6,9 +6,13 @@
       "en": "Command send to control group A",
       "nl": "Commando dat naar groep A wordt verstuurd"
     },
+    "zwave": {
+      "index": 11,
+      "size": 1
+    },
     "hint": {
-      "en": "This parameter defines the command to be sent to devices in control group A when the related button is pressed.",
-      "nl": "Deze parameter bepaalt het commando dat wordt verstuurd naar apparaten in groep A wanneer de bijbehorende knop wordt ingedrukt."
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices in control group A when the related button is pressed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het commando dat wordt verstuurd naar apparaten in groep A wanneer de bijbehorende knop wordt ingedrukt."
     },
     "values": [
       {
@@ -85,8 +89,12 @@
       "nl": "Commando dat naar groep B wordt verstuurd"
     },
     "hint": {
-      "en": "This parameter defines the command to be sent to devices in control group B when the related button is pressed.",
-      "nl": "Deze parameter bepaalt het commando dat wordt verstuurd naar apparaten in groep B wanneer de bijbehorende knop wordt ingedrukt."
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices in control group B when the related button is pressed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het commando dat wordt verstuurd naar apparaten in groep B wanneer de bijbehorende knop wordt ingedrukt."
+    },
+    "zwave": {
+      "index": 12,
+      "size":1
     },
     "values": [
       {
@@ -163,8 +171,12 @@
       "nl": "Commando dat naar groep C wordt verstuurd"
     },
     "hint": {
-      "en": "This parameter defines the command to be sent to devices in control group C when the related button is pressed.",
-      "nl": "Deze parameter bepaalt het commando dat wordt verstuurd naar apparaten in groep C wanneer de bijbehorende knop wordt ingedrukt."
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices in control group C when the related button is pressed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het commando dat wordt verstuurd naar apparaten in groep C wanneer de bijbehorende knop wordt ingedrukt."
+    },
+    "zwave": {
+      "index": 13,
+      "size": 1
     },
     "values": [
       {
@@ -241,8 +253,12 @@
       "nl": "Commando dat naar groep D wordt verstuurd"
     },
     "hint": {
-      "en": "This parameter defines the command to be sent to devices in control group D when the related button is pressed.",
-      "nl": "Deze parameter bepaalt het commando dat wordt verstuurd naar apparaten in groep D wanneer de bijbehorende knop wordt ingedrukt."
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices in control group D when the related button is pressed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het commando dat wordt verstuurd naar apparaten in groep D wanneer de bijbehorende knop wordt ingedrukt."
+    },
+    "zwave": {
+      "index": 14,
+      "size": 1
     },
     "values": [
       {
