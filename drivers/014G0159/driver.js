@@ -39,9 +39,9 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 			command_class: 'COMMAND_CLASS_THERMOSTAT_SETPOINT',
 			command_get: 'THERMOSTAT_SETPOINT_GET',
 			command_get_parser: () => ({
-				'Level': {
+				Level: {
 					'Setpoint Type': 'Heating 1',
-				}
+				},
 			}),
 			command_set: 'THERMOSTAT_SETPOINT_SET',
 			command_set_parser: (value, node) => {
@@ -49,19 +49,19 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 				module.exports.realtime(node.device_data, 'target_temperature', Math.round(value * 2) / 2);
 
 				// Create value buffer
-				let a = new Buffer(2);
-				a.writeUInt16BE(( Math.round(value * 2) / 2 * 10).toFixed(0));
+				const a = new Buffer(2);
+				a.writeUInt16BE((Math.round(value * 2) / 2 * 10).toFixed(0));
 
 				return {
-					'Level': {
-						'Setpoint Type': 'Heating 1'
+					Level: {
+						'Setpoint Type': 'Heating 1',
 					},
-					'Level2': {
-						'Size': 2,
-						'Scale': 0,
-						'Precision': 1
+					Level2: {
+						Size: 2,
+						Scale: 0,
+						Precision: 1,
 					},
-					'Value': a
+					Value: a,
 				};
 			},
 			command_report: 'THERMOSTAT_SETPOINT_REPORT',
@@ -69,18 +69,18 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 				if (report.hasOwnProperty('Level2')
 					&& report.Level2.hasOwnProperty('Scale')
 					&& report.Level2.hasOwnProperty('Precision')
-					&& report.Level2['Scale'] === 0
-					&& typeof report.Level2['Size'] !== 'undefined') {
+					&& report.Level2.Scale === 0
+					&& typeof report.Level2.Size !== 'undefined') {
 
 					let readValue;
 					try {
-						readValue = report['Value'].readUIntBE(0, report.Level2['Size']);
+						readValue = report.Value.readUIntBE(0, report.Level2.Size);
 					} catch (err) {
 						return null;
 					}
 
 					if (typeof readValue !== 'undefined') {
-						return readValue / Math.pow(10, report.Level2['Precision']);
+						return readValue / Math.pow(10, report.Level2.Precision);
 					}
 					return null;
 				}
