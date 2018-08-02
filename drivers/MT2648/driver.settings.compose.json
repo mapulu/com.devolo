@@ -1,0 +1,104 @@
+[
+  {
+    "id": "basic_set_level",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 255
+    },
+    "label": {
+      "en": "Basic set level",
+      "nl": "Basic set waarde"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the basic command value that will be send to associated Z-Wave devices.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt waarde van het basic command dat wordt verstuurd naar geassocieerde Z-Wave devices."
+    },
+    "value": 255
+  },
+  {
+    "id": "light_sensitivity",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "label": {
+      "en": "Illumination threshold",
+      "nl": "Verlichtingsdrempel"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the illummination threshold required to turn on the light on movement.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempelwaarde voor verandering van de lichtsensor om het licht in te schakelen bij beweging."
+    },
+    "value": 99
+  },
+  {
+    "id": "battery_report_time",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 127
+    },
+    "label": {
+      "en": "Battery level report interval",
+      "nl": "Batterijniveau verzend interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval at which the battery level will be automatically reported.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het vaste interval waarop een update wordt verstuurd over het batterij niveau."
+    },
+    "value": 12
+  },
+  {
+    "id": "contact_report_time",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 127
+    },
+    "label": {
+      "en": "Door/Window report interval",
+      "nl": "Deur/Raam verzend interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval at which the contact state will be automatically reported.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het vaste interval waarop een update wordt verstuurd over de contact status."
+    },
+    "value": 12
+  },
+  {
+    "id": "illumination_report_time",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 127
+    },
+    "label": {
+      "en": "Illumination report interval",
+      "nl": "Helderheid verzend interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval time at which the illumination value will be automatically reported.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het vaste interval waarop een update wordt verstuurd over het gemeten lichtsniveau."
+    },
+    "value": 12
+  },
+  {
+    "id": "temperature_report_time",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 127
+    },
+    "label": {
+      "en": "Temperature report interval",
+      "nl": "Temperatuur verzend interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval at which the temperature value will be automatically reported.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het vaste interval waarop een update wordt verstuurd over de gemeten temperatuur."
+    },
+    "value": 12
+  }
+]

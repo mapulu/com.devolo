@@ -1,0 +1,80 @@
+{
+  "name": {
+    "en": "Door/Window Contact Sensor",
+    "nl": "Deur/Raam Contact Sensor"
+  },
+  "zwave": {
+    "manufacturerId": 373,
+    "productTypeId": [
+      2
+    ],
+    "productId": [
+      14
+    ],
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the tamper button on the back of the {{driverNameEn}} three times.",
+        "nl": "Druk drie keer op de knop achter op de {{driverNameNl}}."
+      }
+    },
+    "unlearnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the tamper button on the back of the {{driverNameEn}} three times.",
+        "nl": "Druk drie keer op de knop achter op de {{driverNameNl}}."
+      }
+    },
+    "associationGroups": [
+      1,
+      2
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Z-Wave Plus Lifeline"
+        }
+      },
+      "2": {
+        "hint": {
+          "en": "Uses the \"Basic Set\" for control of other Z-Wave devices.",
+          "nl": "Gebruikt de \"Basic Set\" voor het aansturen van andere Z-Wave apparaten."
+        }
+      }
+    }
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_contact",
+    "alarm_tamper",
+    "measure_luminance",
+    "measure_temperature",
+    "measure_battery"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "mobile": {
+    "components": [
+      {
+        "id": "icon"
+      },
+      {
+        "id": "battery",
+        "capabilities": [
+          "measure_battery"
+        ]
+      },
+      {
+        "id": "sensor",
+        "capabilities": [
+          "alarm_contact",
+          "measure_luminance",
+          "measure_temperature",
+          "alarm_tamper"
+        ]
+      }
+    ]
+  }
+}
