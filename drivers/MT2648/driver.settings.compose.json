@@ -14,6 +14,10 @@
       "en": "This parameter ({{zwaveParameterIndex}}) determines the basic command value that will be send to associated Z-Wave devices.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt waarde van het basic command dat wordt verstuurd naar geassocieerde Z-Wave devices."
     },
+    "zwave": {
+      "index": 2,
+      "size": 1
+    },
     "value": 255
   },
   {
@@ -30,6 +34,10 @@
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines the illummination threshold required to turn on the light on movement.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempelwaarde voor verandering van de lichtsensor om het licht in te schakelen bij beweging."
+    },
+    "zwave": {
+      "index": 4,
+      "size": 1
     },
     "value": 99
   },
@@ -48,6 +56,10 @@
       "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval at which the battery level will be automatically reported.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het vaste interval waarop een update wordt verstuurd over het batterij niveau."
     },
+    "zwave": {
+      "index": 10,
+      "size": 1
+    },
     "value": 12
   },
   {
@@ -64,6 +76,10 @@
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval at which the contact state will be automatically reported.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het vaste interval waarop een update wordt verstuurd over de contact status."
+    },
+    "zwave": {
+      "index": 11,
+      "size": 1
     },
     "value": 12
   },
@@ -82,6 +98,10 @@
       "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval time at which the illumination value will be automatically reported.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het vaste interval waarop een update wordt verstuurd over het gemeten lichtsniveau."
     },
+    "zwave": {
+      "index": 12,
+      "size": 1
+    },
     "value": 12
   },
   {
@@ -98,6 +118,10 @@
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval at which the temperature value will be automatically reported.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het vaste interval waarop een update wordt verstuurd over de gemeten temperatuur."
+    },
+    "zwave": {
+      "index": 13,
+      "size": 1
     },
     "value": 12
   }
