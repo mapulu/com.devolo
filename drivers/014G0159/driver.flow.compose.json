@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "id": "014G0159_btn_1",
+      "title": {
+        "en": "Button pressed",
+        "nl": "Knop ingedrukt"
+      }
+    }
+  ],
+  "conditions": [],
+  "actions": []
+}

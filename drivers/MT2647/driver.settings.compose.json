@@ -154,7 +154,7 @@
     "zwave": {
       "index": 6,
       "size": 1
-    },
+    }
   },
   {
     "id": "pir_redetect_interval_time",
@@ -175,7 +175,7 @@
     "zwave": {
       "index": 8,
       "size": 1
-    },
+    }
   },
   {
     "id": "battery_report_time",
