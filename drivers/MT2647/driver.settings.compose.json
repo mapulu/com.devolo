@@ -1,0 +1,243 @@
+[
+  {
+    "id": "basic_set_level",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 255
+    },
+    "zwave": {
+      "index": 2,
+      "size": 1,
+      "signed": false
+    },
+    "label": {
+      "en": "Basic set level",
+      "nl": "Basic set waarde"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the basic command value that will be send to associated Z-Wave devices.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) de basic command waarde die wordt verstuurd naar geassocieerde Z-Wave devices."
+    },
+    "value": 255
+  },
+  {
+    "id": "pir_sensitivity",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 99
+    },
+    "zwave": {
+      "index": 3,
+      "size": 1
+    },
+    "label": {
+      "en": "Motion sensitivity",
+      "nl": "Bewegingsdetector gevoeligheid"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the motion sensitivity.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de bewegingsgevoeligheid."
+    },
+    "value": 80
+  },
+  {
+    "id": "turn_off_light_time",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 127
+    },
+    "zwave": {
+      "index": 9,
+      "size": 1
+    },
+    "value": 4,
+    "label": {
+      "en": "Motion alarm cancellation delay",
+      "nl": "Bewegingsalarm annuleringsperiode"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the time after which the alarm will be cancelled.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd waarna het alarm uitgeschakelt wordt."
+    }
+  },
+  {
+    "id": "light_sensitivity",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "label": {
+      "en": "Illumination threshold",
+      "nl": "Verlichtingsdrempel"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the illummination threshold to turn on associated devices on movement.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempelwaarde voor de lichtsensor om geassocieerde apparaten in te schakelen bij beweging."
+    },
+    "zwave": {
+      "index": 4,
+      "size": 1
+    },
+    "value": 99
+  },
+  {
+    "id": "test_mode",
+    "type": "checkbox",
+    "value": false,
+    "label": {
+      "en": "Test mode",
+      "nl": "Test modus"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether the device will be in test mode or in automation mode.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of dit apparaat test modus of in automatiseringsmodus staat."
+    }
+  },
+  {
+    "id": "operation_mode",
+    "type": "dropdown",
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Home automation mode",
+          "nl": "Huis automatisering modus"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Security mode",
+          "nl": "Beveiligingsmodus"
+        }
+      }
+    ],
+    "label": {
+      "en": "Operation mode",
+      "nl": "Werkingsmodus"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the device is in security mode or home automation mode.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat in beveiligingsmodus of huis automatisering modus staat."
+    }
+  },
+  {
+    "id": "door/window_mode",
+    "type": "checkbox",
+    "value": false,
+    "label": {
+      "en": "Disable door/window sensor",
+      "nl": "Deactiveer deur/raam sensor"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether the door/window sensor is enabled or disabled. It is only relevant for the STM02.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt Deactiveer de deur/raam sensor (alleen gebruikt bij STM02)."
+    }
+  },
+  {
+    "id": "temperature_monitoring",
+    "type": "checkbox",
+    "value": false,
+    "label": {
+      "en": "Enable temperature monitoring",
+      "nl": "Activeer temperatuur monitoring"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the device will report temperature measurements.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt Indien ingeschakeld stuurt het apparaat een temperatuur update als de temperatuur 1,5 graden Celsius veranderd."
+    },
+    "zwave": {
+      "index": 6,
+      "size": 1
+    },
+  },
+  {
+    "id": "pir_redetect_interval_time",
+    "type": "number",
+    "attr": {
+      "min": 1,
+      "max": 127
+    },
+    "value": 3,
+    "label": {
+      "en": "PIR re-detect interval",
+      "nl": "Bewegingsdetectie interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the blind time of the motion sensor after detecting motion.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt Deze parameter is alleen relevant wanneer het apparaat in normale werkingsmodus is ingesteld."
+    },
+    "zwave": {
+      "index": 8,
+      "size": 1
+    },
+  },
+  {
+    "id": "battery_report_time",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 127
+    },
+    "label": {
+      "en": "Battery level report interval",
+      "nl": "Batterijniveau verzend interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for automatically reporting the battery level.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt Een vast interval (in uren) om een update te sturen over het actuele batterij niveau."
+    },
+    "zwave": {
+      "index": 10,
+      "size": 1
+    },
+    "value": 12
+  },
+  {
+    "id": "illumination_report_time",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 127
+    },
+    "label": {
+      "en": "Illumination report interval",
+      "nl": "Helderheid verzend interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for automatically reporting the illumination.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt Een vast interval (in uren) om een rapport te sturen over de gemeten helderheid."
+    },
+    "zwave": {
+      "index": 12,
+      "size": 1
+    },
+    "value": 12
+  },
+  {
+    "id": "temperature_report_time",
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 127
+    },
+    "label": {
+      "en": "Temperature report interval",
+      "nl": "Temperatuur verzend interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for automatically reporting of temperature.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt Een vast interval (in uren) om een rapport te sturen over de temperatuur."
+    },
+    "zwave": {
+      "index": 13,
+      "size": 1
+    },
+    "value": 12
+  }
+]
