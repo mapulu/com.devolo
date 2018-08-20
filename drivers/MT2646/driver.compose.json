@@ -1,0 +1,50 @@
+{
+  "id": "MT2646",
+  "name": {
+    "en": "Metering Plug"
+  },
+  "zwave": {
+    "manufacturerId": 373,
+    "productTypeId": [
+      1
+    ],
+    "productId": [
+      17
+    ],
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Put the {{driverNameEn}} in a socket or press the button on the front of the device three times to start inclusion.",
+        "nl": "Stop de {{driverNameNl}} in het stopcontact of druk drie keer op de knop aan de voorkant van het apparaat om het toevoegen te starten."
+      }
+    },
+    "unlearnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the button on the front of the {{driverNameEn}} three times to start exclusion.",
+        "nl": "Druk drie keer op de knop aan de voorkant van de {{driverNameNl}} om hem te verwijderen."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Z-Wave Plus Lifeline, do not remove this association group or the device will stop functioning as expected.",
+          "nl": "Z-Wave Plus Lifeline, verwijder deze associatie groep niet, anders zal het apparaat niet meer functioneren zoals verwacht."
+        }
+      }
+    }
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "measure_power",
+    "meter_power"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  }
+}

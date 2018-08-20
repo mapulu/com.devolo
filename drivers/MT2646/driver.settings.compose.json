@@ -1,0 +1,141 @@
+[
+  {
+    "id": "1",
+    "value": 720,
+    "label": {
+      "en": "Watt interval reporting",
+      "nl": "Watt interval updates"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines how often meter reporting of instantaneous Watt usage is reported automatically.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt hoe vaak er updates worden verstuurd met de Watt waarde."
+    },
+    "zwave": {
+      "index": 1,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 32767
+    }
+  },
+  {
+    "id": "2",
+    "value": 6,
+    "label": {
+      "en": "kWh interval reporting",
+      "nl": "kWh interval updates"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines how often meter reporting of instantaneous kWh usage is reported automatically.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt hoe vaak er updates worden verstuurd met de kWh waarde."
+    },
+    "zwave": {
+      "index": 2,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 32767
+    }
+  },
+  {
+    "id": "5",
+    "value": "1",
+    "label": {
+      "en": "Restore switch state after powerloss",
+      "nl": "Herstel schakelstatus na stroomonderbreking"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the state this switch will restore to after power loss.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de status van het apparaat waarna deze terugkeert na stroom onderbreking."
+    },
+    "zwave": {
+      "index": 5,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Remain off",
+          "nl": "Laat uit"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Previous state",
+          "nl": "Vorige status"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Turn on",
+          "nl": "Zet aan"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "7",
+    "value": "0",
+    "label": {
+      "en": "LED indication mode",
+      "nl": "LED indicatie modus"
+    },
+    "zwave": {
+      "index": 7,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "1",
+        "label": {
+          "en": "Follow the state of the switch",
+          "nl": "Schakelstatus"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Night mode",
+          "nl": "Nacht modus"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Flash mode",
+          "nl": "Knipper modus"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "8",
+    "value": 0,
+    "label": {
+      "en": "Auto off",
+      "nl": "Schakel automatisch uit"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines if and how long after the switch has been turned on it will be automatically turned off.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald of en hoelang nadat de schakelaar aan is gezet hij automatisch weer wordt uitgezet."
+    },
+    "zwave": {
+      "index": 8,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 32767
+    }
+  }
+]
