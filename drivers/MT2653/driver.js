@@ -1,6 +1,8 @@
 'use strict';
 
 const Homey = require('homey');
+const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
+
 const triggerMap = {
     1: 'btn1_single',
     2: 'btn2_single',
