@@ -1,6 +1,5 @@
 'use strict';
 
-const Homey = require('homey');
 const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
 class DevoloMeteringPlug extends ZwaveDevice {
