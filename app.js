@@ -1,7 +1,11 @@
 'use strict';
 
-const Log = require('homey-log').Log;
+const Homey = require('homey');
 
-module.exports.init = () => {
-	console.log(`${Homey.manifest.id} running...`);
-};
+class DevoloApp extends Homey.App {
+	onInit() {
+        console.log(`${Homey.manifest.id} running...`);
+    }
+}
+
+module.exports = DevoloApp;
