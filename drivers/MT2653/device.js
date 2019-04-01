@@ -19,7 +19,9 @@ class DevoloKeyFobDevice extends ZwaveDevice {
 
 		this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', (report) => {
             const flowID = triggerMap[report['Scene Number']];
-            this.getDriver.[flowID].trigger(this, null, null);
+
+            let driver = this.getDriver();
+            driver[flowID].trigger(this, null, null);
 		});
 	}
 
