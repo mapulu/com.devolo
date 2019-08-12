@@ -2,15 +2,37 @@
 
 const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
+const TAMPER_TIMEOUT = 30*1000;
+
 class DevoloMotionSensor extends ZwaveDevice {
 
 	onMeshInit() {
-		this.registerCapability('alarm_motion', 'SENSOR_BINARY');
-        this.registerCapability('alarm_tamper', 'SENSOR_BINARY');
+        this.setCapabilityValue('alarm_tamper', false);
+
+        // This sensor does not send a timeout when the motion period is over.
+        // However, it does send a BASIC command when the timeout is over. This is used to reset the alarm_motion.
+        this.registerCapability('alarm_motion', 'SENSOR_BINARY');
+
+        this.registerReportListener('BASIC', report => {
+            if (!report || !report.hasOwnProperty('Value')) return null;
+            this.setCapabilityValue('alarm_motion', report.Value !== 0);
+        });
+
+        // This sensor does not send a timeout when the tamper period is over. Use a timeout to reset the capability
+       this.registerReportListener('SENSOR_BINARY', 'SENSOR_BINARY_REPORT', report => {
+            if (!report || !report.hasOwnProperty('Sensor Value') || !report.hasOwnProperty('Sensor Type')) return null;
+
+            if (report['Sensor Type'] === 'Tamper' && report['Sensor Value'] === 'detected an event') {
+                this.setCapabilityValue('alarm_tamper', true);
+                this.tamperTimeOut = setTimeout(() => {
+                    this.setCapabilityValue('alarm_tamper', false);
+                }, TAMPER_TIMEOUT);
+            }
+        });
+
         this.registerCapability('measure_luminance', 'SENSOR_MULTILEVEL');
         this.registerCapability('measure_temperature', 'SENSOR_MULTILEVEL');
         this.registerCapability('measure_battery', 'BATTERY');
-        this.registerCapability('alarm_battery', 'BATTERY');
 
         this.registerSetting('basic_set_level', input => new Buffer([(input >= 100 && input < 255) ? 255 : input]));
         this.registerSetting('temperature_monitoring', input => {
@@ -25,19 +47,19 @@ class DevoloMotionSensor extends ZwaveDevice {
 
     async onSettings(oldSettings, newSettings, changedKeys, callback) {
 		if (changedKeys.includes('test_mode') || changedKeys.includes('operation_mode') || changedKeys.includes('door/window_mode')) {
-			let parameterFive = Number(newSettings.operation_mode) + 8;
-			if (typeof newSettings.test_mode === 'boolean' && newSettings.test_mode) parameterFive += 2;
-            if (typeof newSettings['door/window_mode'] === 'boolean' && newSettings['door/window_mode']) parameterFive += 4;
+			let param5 = Number(newSettings.operation_mode) + 8;
+			if (typeof newSettings.test_mode === 'boolean' && newSettings.test_mode) param5 += 2;
+            if (typeof newSettings['door/window_mode'] === 'boolean' && newSettings['door/window_mode']) param5 += 4;
 
             try {
                 await this.configurationSet({
                     index: 5,
                     size: 1,
-                }, parameterFive);
+                }, param5);
 
                 callback(null, true);
-            } catch (e) {
-                callback(e, null);
+            } catch (err) {
+                callback(err, null);
             }
         }
 

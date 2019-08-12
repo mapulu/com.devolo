@@ -570,28 +570,6 @@
         "large": "/drivers/MT2647/assets/images/large.png",
         "small": "/drivers/MT2647/assets/images/small.png"
       },
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ]
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "alarm_motion",
-              "measure_luminance",
-              "measure_temperature",
-              "alarm_tamper"
-            ]
-          }
-        ]
-      },
       "settings": [
         {
           "id": "basic_set_level",
