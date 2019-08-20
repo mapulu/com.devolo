@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "value": "1",
+    "value": "0",
     "label": {
       "en": "Button 1 and 3 mode",
       "nl": "Knop 1 en 3 modus"
@@ -18,7 +18,7 @@
       {
         "id": "0",
         "label": {
-          "en": "seperately",
+          "en": "Seperately",
           "nl": "Apart"
         }
       },
@@ -66,21 +66,21 @@
         "id": "1",
         "label": {
           "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
-          "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+          "nl": "Schakel aan/uit en dim (verstuur Basic Set en Switch Multilevel)"
         }
       },
       {
         "id": "2",
         "label": {
           "en": "Switch on/off only (send Basic Set)",
-          "nl": "Switch on/off (verstuur Basic Set)"
+          "nl": "Schakel aan/uit (verstuur Basic Set)"
         }
       },
       {
         "id": "3",
         "label": {
           "en": "Switch all",
-          "nl": "Switch all"
+          "nl": "Schakel alles"
         }
       },
       {
@@ -101,7 +101,7 @@
         "id": "7",
         "label": {
           "en": "Control doorLock",
-          "nl": "Control doorlock"
+          "nl": "Bestuur deurslot"
         }
       },
       {
@@ -141,21 +141,21 @@
         "id": "1",
         "label": {
           "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
-          "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+          "nl": "Schakel aan/uit en dim (verstuur Basic Set en Switch Multilevel)"
         }
       },
       {
         "id": "2",
         "label": {
           "en": "Switch on/off only (send Basic Set)",
-          "nl": "Switch on/off (verstuur Basic Set)"
+          "nl": "Schakel aan/uit (verstuur Basic Set)"
         }
       },
       {
         "id": "3",
         "label": {
           "en": "Switch all",
-          "nl": "Switch all"
+          "nl": "Schakel alles"
         }
       },
       {
@@ -176,7 +176,7 @@
         "id": "7",
         "label": {
           "en": "Control doorLock",
-          "nl": "Control doorlock"
+          "nl": "Bestuur deurslot"
         }
       },
       {
@@ -216,21 +216,21 @@
         "id": "1",
         "label": {
           "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
-          "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+          "nl": "Schakel aan/uit en dim (verstuur Basic Set en Switch Multilevel)"
         }
       },
       {
         "id": "2",
         "label": {
           "en": "Switch on/off only (send Basic Set)",
-          "nl": "Switch on/off (verstuur Basic Set)"
+          "nl": "Schakel aan/uit (verstuur Basic Set)"
         }
       },
       {
         "id": "3",
         "label": {
           "en": "Switch all",
-          "nl": "Switch all"
+          "nl": "Schakel alles"
         }
       },
       {
@@ -251,7 +251,7 @@
         "id": "7",
         "label": {
           "en": "Control doorLock",
-          "nl": "Control doorlock"
+          "nl": "Bestuur deurslot"
         }
       },
       {
@@ -291,21 +291,21 @@
         "id": "1",
         "label": {
           "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
-          "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+          "nl": "Schakel aan/uit en dim (verstuur Basic Set en Switch Multilevel)"
         }
       },
       {
         "id": "2",
         "label": {
           "en": "Switch on/off only (send Basic Set)",
-          "nl": "Switch on/off (verstuur Basic Set)"
+          "nl": "Schakel aan/uit (verstuur Basic Set)"
         }
       },
       {
         "id": "3",
         "label": {
           "en": "Switch all",
-          "nl": "Switch all"
+          "nl": "Schakel alles"
         }
       },
       {
@@ -326,7 +326,7 @@
         "id": "7",
         "label": {
           "en": "Control doorLock",
-          "nl": "Control doorlock"
+          "nl": "Bestuur deurslot"
         }
       },
       {
@@ -341,7 +341,7 @@
   },
   {
     "id": "2",
-    "value": "1",
+    "value": "0",
     "label": {
       "en": "Button 2 and 4 mode",
       "nl": "Knop 2 en 4 modus"
@@ -358,7 +358,7 @@
       {
         "id": "0",
         "label": {
-          "en": "seperately",
+          "en": "Seperately",
           "nl": "Apart"
         }
       },

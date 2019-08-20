@@ -4,7 +4,7 @@
   "description": "This app adds support for Devolo devices in Homey",
   "main": "app.js",
   "dependencies": {
-    "homey-meshdriver": "^1.2.33"
+    "homey-meshdriver": "^1.2.34"
   },
   "devDependencies": {},
   "scripts": {

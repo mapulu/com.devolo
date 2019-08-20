@@ -1,39 +1,39 @@
 {
-    "id": "com.devolo",
-    "sdk": 2,
-    "name": {
-      "en": "Devolo"
-    },
-    "version": "2.0.3",
-    "compatibility": ">=2.4.0",
-    "description": {
-      "en": "Devolo Home Control Z-Wave devices for Homey",
-      "nl": "Devolo Home Control Z-Wave devices voor Homey"
-    },
-    "category": [
-      "appliances",
-      "lights",
-      "climate",
-      "security"
-    ],
-    "images": {
-      "large": "/assets/images/large.png",
-      "small": "/assets/images/small.png"
-    },
-    "author": {
-      "name": "Athom B.V.",
-      "email": "apps@athom.com"
-    },
-    "contributors": {
-      "developers": [
-        {
-          "name": "Bram Oosterhuis",
-          "email": "bram.oosterhuis.nl@gmail.com"
-        },
-        {
-          "name": "Michel de Ru",
-          "email": "michel@de-ru.net"
-        }
-      ]
-    }
+  "id": "com.devolo",
+  "sdk": 2,
+  "name": {
+    "en": "Devolo"
+  },
+  "version": "2.0.4",
+  "compatibility": ">=2.4.0",
+  "description": {
+    "en": "Devolo Home Control Z-Wave devices for Homey",
+    "nl": "Devolo Home Control Z-Wave devices voor Homey"
+  },
+  "category": [
+    "appliances",
+    "lights",
+    "climate",
+    "security"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Athom B.V.",
+    "email": "apps@athom.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Bram Oosterhuis",
+        "email": "bram.oosterhuis.nl@gmail.com"
+      },
+      {
+        "name": "Michel de Ru",
+        "email": "michel@de-ru.net"
+      }
+    ]
+  }
 }

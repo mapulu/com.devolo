@@ -55,36 +55,20 @@
             {
               "id": "Key Held Down",
               "label": {
-                "en": "Hold press (5x a second)",
-                "nl": "Lang drukken (5x per seconde)"
+                "en": "keep button pressed",
+                "nl": "Knop ingedrukt houden"
               }
             },
             {
               "id": "Key Released",
               "label": {
-                "en": "Press released",
-                "nl": "Drukken losgelaten"
-              }
-            },
-            {
-              "id": "Key Slide Up",
-              "label": {
-                "en": "Slide Up",
-                "nl": "Omhoog Schuiven"
-              }
-            },
-            {
-              "id": "Key Slide Down",
-              "label": {
-                "en": "Slide Down",
-                "nl": "Omlaag schuiven"
+                "en": "Button released after long press",
+                "nl": "Knop losgelaten na lang drukken"
               }
             }
           ]
         }
       ]
     }
-  ],
-  "conditions": [],
-  "actions": []
+  ]
 }

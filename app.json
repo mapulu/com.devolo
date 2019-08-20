@@ -4,8 +4,8 @@
   "name": {
     "en": "Devolo"
   },
-  "version": "2.0.2",
-  "compatibility": ">=1.5.6",
+  "version": "2.0.4",
+  "compatibility": ">=2.4.0",
   "description": {
     "en": "Devolo Home Control Z-Wave devices for Homey",
     "nl": "Devolo Home Control Z-Wave devices voor Homey"
@@ -112,29 +112,15 @@
               {
                 "id": "Key Held Down",
                 "label": {
-                  "en": "Hold press (5x a second)",
-                  "nl": "Lang drukken (5x per seconde)"
+                  "en": "keep button pressed",
+                  "nl": "Knop ingedrukt houden"
                 }
               },
               {
                 "id": "Key Released",
                 "label": {
-                  "en": "Press released",
-                  "nl": "Drukken losgelaten"
-                }
-              },
-              {
-                "id": "Key Slide Up",
-                "label": {
-                  "en": "Slide Up",
-                  "nl": "Omhoog Schuiven"
-                }
-              },
-              {
-                "id": "Key Slide Down",
-                "label": {
-                  "en": "Slide Down",
-                  "nl": "Omlaag schuiven"
+                  "en": "Button released after long press",
+                  "nl": "Knop losgelaten na lang drukken"
                 }
               }
             ]
@@ -1051,6 +1037,18 @@
         },
         "associationGroups": [
           1
+        ],
+        "defaultConfiguration": [
+          {
+            "id": 1,
+            "size": 1,
+            "value": 0
+          },
+          {
+            "id": 2,
+            "size": 1,
+            "value": 0
+          }
         ]
       },
       "class": "other",
@@ -1061,23 +1059,10 @@
         "large": "/drivers/MT2652/assets/images/large.png",
         "small": "/drivers/MT2652/assets/images/small.png"
       },
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ]
-          }
-        ]
-      },
       "settings": [
         {
           "id": "1",
-          "value": "1",
+          "value": "0",
           "label": {
             "en": "Button 1 and 3 mode",
             "nl": "Knop 1 en 3 modus"
@@ -1094,7 +1079,7 @@
             {
               "id": "0",
               "label": {
-                "en": "seperately",
+                "en": "Seperately",
                 "nl": "Apart"
               }
             },
@@ -1142,21 +1127,21 @@
               "id": "1",
               "label": {
                 "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
-                "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+                "nl": "Schakel aan/uit en dim (verstuur Basic Set en Switch Multilevel)"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Switch on/off only (send Basic Set)",
-                "nl": "Switch on/off (verstuur Basic Set)"
+                "nl": "Schakel aan/uit (verstuur Basic Set)"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Switch all",
-                "nl": "Switch all"
+                "nl": "Schakel alles"
               }
             },
             {
@@ -1177,7 +1162,7 @@
               "id": "7",
               "label": {
                 "en": "Control doorLock",
-                "nl": "Control doorlock"
+                "nl": "Bestuur deurslot"
               }
             },
             {
@@ -1217,21 +1202,21 @@
               "id": "1",
               "label": {
                 "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
-                "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+                "nl": "Schakel aan/uit en dim (verstuur Basic Set en Switch Multilevel)"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Switch on/off only (send Basic Set)",
-                "nl": "Switch on/off (verstuur Basic Set)"
+                "nl": "Schakel aan/uit (verstuur Basic Set)"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Switch all",
-                "nl": "Switch all"
+                "nl": "Schakel alles"
               }
             },
             {
@@ -1252,7 +1237,7 @@
               "id": "7",
               "label": {
                 "en": "Control doorLock",
-                "nl": "Control doorlock"
+                "nl": "Bestuur deurslot"
               }
             },
             {
@@ -1292,21 +1277,21 @@
               "id": "1",
               "label": {
                 "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
-                "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+                "nl": "Schakel aan/uit en dim (verstuur Basic Set en Switch Multilevel)"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Switch on/off only (send Basic Set)",
-                "nl": "Switch on/off (verstuur Basic Set)"
+                "nl": "Schakel aan/uit (verstuur Basic Set)"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Switch all",
-                "nl": "Switch all"
+                "nl": "Schakel alles"
               }
             },
             {
@@ -1327,7 +1312,7 @@
               "id": "7",
               "label": {
                 "en": "Control doorLock",
-                "nl": "Control doorlock"
+                "nl": "Bestuur deurslot"
               }
             },
             {
@@ -1367,21 +1352,21 @@
               "id": "1",
               "label": {
                 "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
-                "nl": "Switch on/off en dim (verstuur Basic Set en Switch Multilevel)"
+                "nl": "Schakel aan/uit en dim (verstuur Basic Set en Switch Multilevel)"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Switch on/off only (send Basic Set)",
-                "nl": "Switch on/off (verstuur Basic Set)"
+                "nl": "Schakel aan/uit (verstuur Basic Set)"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Switch all",
-                "nl": "Switch all"
+                "nl": "Schakel alles"
               }
             },
             {
@@ -1402,7 +1387,7 @@
               "id": "7",
               "label": {
                 "en": "Control doorLock",
-                "nl": "Control doorlock"
+                "nl": "Bestuur deurslot"
               }
             },
             {
@@ -1417,7 +1402,7 @@
         },
         {
           "id": "2",
-          "value": "1",
+          "value": "0",
           "label": {
             "en": "Button 2 and 4 mode",
             "nl": "Knop 2 en 4 modus"
@@ -1434,7 +1419,7 @@
             {
               "id": "0",
               "label": {
-                "en": "seperately",
+                "en": "Seperately",
                 "nl": "Apart"
               }
             },
@@ -1571,6 +1556,14 @@
       "name": {
         "en": "Home Control Keyfob"
       },
+      "class": "light",
+      "capabilities": [
+        "measure_battery"
+      ],
+      "images": {
+        "small": "/drivers/MT2653/assets/images/small.png",
+        "large": "/drivers/MT2653/assets/images/large.png"
+      },
       "zwave": {
         "manufacturerId": 373,
         "productTypeId": [
@@ -1627,27 +1620,6 @@
             }
           }
         }
-      },
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ]
-          }
-        ]
-      },
-      "class": "light",
-      "capabilities": [
-        "measure_battery"
-      ],
-      "images": {
-        "small": "/drivers/MT2653/assets/images/small.png",
-        "large": "/drivers/MT2653/assets/images/large.png"
       },
       "id": "MT2653",
       "settings": [

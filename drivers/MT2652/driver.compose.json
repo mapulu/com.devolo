@@ -25,6 +25,18 @@
     },
     "associationGroups": [
       1
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 1,
+        "size": 1,
+        "value": 0
+      },
+      {
+        "id": 2,
+        "size": 1,
+        "value": 0
+      }
     ]
   },
   "class": "other",
@@ -34,18 +46,5 @@
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
-  },
-  "mobile": {
-    "components": [
-      {
-        "id": "icon"
-      },
-      {
-        "id": "battery",
-        "capabilities": [
-          "measure_battery"
-        ]
-      }
-    ]
   }
 }

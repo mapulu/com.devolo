@@ -7,6 +7,8 @@ This app adds support for Devolo Z-Wave devices in Homey.
 ### Version 2.0.4
 - Fix tamper alarm for Motion Sensor and Door/Window contact.
 - Added temperature measurement for Radiator Thermostat.
+- Fix Scene Button flows not triggering. Reduced the number of flows to prevent issues with the button numbers.
+- Fix flow triggers for Keyfob.
 
 ### Version 2.0.0
 - Switched to SDK2
