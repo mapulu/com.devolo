@@ -21,15 +21,15 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "When in factory default push button 1 shortly to start inclusion.",
-        "nl": "Als de Keyfob in standaard fabrieksmodus staat, druk dan kort op knop 1 om het apparaat toe te voegen."
+        "en": "Hold a button for more then a second. If this doesn't include the device, please reset it first.",
+        "nl": "Om het apparaat toe te voegen, druk langer dan één seconde op één van de knoppen van de schakelaar. Indien dit niet werkt, voer dan eerst een reset uit."
       }
     },
     "unlearnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "When in factory default push button 1 shortly to start exclusion.",
-        "nl": "Als de Keyfob in standaard fabrieksmodus staat, druk dan kort op knop 1 om het apparaat te verwijderen."
+        "en": "Hold all buttons until the light blinks green. Then press button 1 twice to remove the device.",
+        "nl": "Houd alle knoppen tegelijkertijd ingedrukt tot het lampje groen knippert. Druk dan tweemaal op knop 1 om het apparaat te verwijderen."
       }
     },
     "associationGroups": [

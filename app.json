@@ -1024,15 +1024,15 @@
         "learnmode": {
           "image": "/drivers/MT2652/assets/learnmode.svg",
           "instruction": {
-            "en": "Activate inclusion on the device by pressing any one of the four buttons for one second.",
-            "nl": "Om het apparaat toe te voegen, druk langer dan één seconde op één van de knoppen van de schakelaar."
+            "en": "Hold a button for more then a second. If this doesn't include the device, please reset it first.",
+            "nl": "Om het apparaat toe te voegen, druk langer dan één seconde op één van de knoppen van de schakelaar. Indien dit niet werkt, voer dan eerst een reset uit."
           }
         },
         "unlearnmode": {
           "image": "/drivers/MT2652/assets/learnmode.svg",
           "instruction": {
-            "en": "Activate exclusion on the device by putting the device in \"Management Mode\", afterwards press any one of the four buttons for one second.",
-            "nl": "Om het apparaat te verwijderen, zet het apparaat in \"Management Modus\",druk vervolgens langer dan één seconde op één van de knoppen van de schakelaar."
+            "en": "Hold all buttons until the light blinks green. Then press button 1 twice to remove the device.",
+            "nl": "Houd alle knoppen tegelijkertijd ingedrukt tot het lampje groen knippert. Druk dan tweemaal op knop 1 om het apparaat te verwijderen."
           }
         },
         "associationGroups": [
@@ -1575,15 +1575,15 @@
         "learnmode": {
           "image": "/drivers/MT2653/assets/learnmode.svg",
           "instruction": {
-            "en": "When in factory default push button 1 shortly to start inclusion.",
-            "nl": "Als de Keyfob in standaard fabrieksmodus staat, druk dan kort op knop 1 om het apparaat toe te voegen."
+            "en": "Hold a button for more then a second. If this doesn't include the device, please reset it first.",
+            "nl": "Om het apparaat toe te voegen, druk langer dan één seconde op één van de knoppen van de schakelaar. Indien dit niet werkt, voer dan eerst een reset uit."
           }
         },
         "unlearnmode": {
           "image": "/drivers/MT2653/assets/learnmode.svg",
           "instruction": {
-            "en": "When in factory default push button 1 shortly to start exclusion.",
-            "nl": "Als de Keyfob in standaard fabrieksmodus staat, druk dan kort op knop 1 om het apparaat te verwijderen."
+            "en": "Hold all buttons until the light blinks green. Then press button 1 twice to remove the device.",
+            "nl": "Houd alle knoppen tegelijkertijd ingedrukt tot het lampje groen knippert. Druk dan tweemaal op knop 1 om het apparaat te verwijderen."
           }
         },
         "associationGroups": [
