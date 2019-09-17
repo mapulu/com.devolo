@@ -4,7 +4,7 @@
   "name": {
     "en": "Devolo"
   },
-  "version": "2.0.4",
+  "version": "2.0.5",
   "compatibility": ">=2.4.0",
   "description": {
     "en": "Devolo Home Control Z-Wave devices for Homey",

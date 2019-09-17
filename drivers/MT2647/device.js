@@ -24,6 +24,8 @@ class DevoloMotionSensor extends ZwaveDevice {
 
             if (report['Sensor Type'] === 'Tamper' && report['Sensor Value'] === 'detected an event') {
                 this.setCapabilityValue('alarm_tamper', true);
+                
+                if (this.tamperTimeOut) clearTimeout(this.tamperTimeOut);
                 this.tamperTimeOut = setTimeout(() => {
                     this.setCapabilityValue('alarm_tamper', false);
                 }, TAMPER_TIMEOUT);

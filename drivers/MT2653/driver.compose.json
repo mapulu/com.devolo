@@ -10,6 +10,9 @@
     "small": "{{driverAssetsPath}}/images/small.png",
     "large": "{{driverAssetsPath}}/images/large.png"
   },
+  "energy": {
+    "batteries": [ "CR2032" ]
+  },
   "zwave": {
     "manufacturerId": 373,
     "productTypeId": [

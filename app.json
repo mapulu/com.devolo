@@ -4,7 +4,7 @@
   "name": {
     "en": "Devolo"
   },
-  "version": "2.0.4",
+  "version": "2.0.5",
   "compatibility": ">=2.4.0",
   "description": {
     "en": "Devolo Home Control Z-Wave devices for Homey",
@@ -235,6 +235,12 @@
         "large": "/drivers/014G0159/assets/images/large.png",
         "small": "/drivers/014G0159/assets/images/small.png"
       },
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA"
+        ]
+      },
       "zwave": {
         "manufacturerId": 2,
         "productTypeId": [
@@ -270,6 +276,29 @@
         "en": "Radiator Thermostat",
         "nl": "Radiatorthermostaat"
       },
+      "class": "thermostat",
+      "capabilities": [
+        "target_temperature",
+        "measure_temperature",
+        "measure_battery"
+      ],
+      "capabilitiesOptions": {
+        "target_temperature": {
+          "min": 4,
+          "max": 28,
+          "decimals": 1
+        }
+      },
+      "images": {
+        "small": "/drivers/014G0801/assets/images/small.jpg",
+        "large": "/drivers/014G0801/assets/images/large.jpg"
+      },
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA"
+        ]
+      },
       "zwave": {
         "manufacturerId": 2,
         "productTypeId": 5,
@@ -292,23 +321,6 @@
         "associationGroups": [
           1
         ]
-      },
-      "class": "thermostat",
-      "capabilities": [
-        "target_temperature",
-        "measure_temperature",
-        "measure_battery"
-      ],
-      "capabilitiesOptions": {
-        "target_temperature": {
-          "min": 4,
-          "max": 28,
-          "decimals": 1
-        }
-      },
-      "images": {
-        "small": "/drivers/014G0801/assets/images/small.jpg",
-        "large": "/drivers/014G0801/assets/images/large.jpg"
       }
     },
     {
@@ -508,6 +520,23 @@
         "en": "Motion Sensor",
         "nl": "Bewegingsdetector"
       },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_motion",
+        "alarm_tamper",
+        "measure_luminance",
+        "measure_temperature",
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/MT2647/assets/images/large.png",
+        "small": "/drivers/MT2647/assets/images/small.png"
+      },
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
       "zwave": {
         "manufacturerId": 373,
         "productTypeId": [
@@ -543,18 +572,6 @@
             }
           }
         }
-      },
-      "class": "sensor",
-      "capabilities": [
-        "alarm_motion",
-        "alarm_tamper",
-        "measure_luminance",
-        "measure_temperature",
-        "measure_battery"
-      ],
-      "images": {
-        "large": "/drivers/MT2647/assets/images/large.png",
-        "small": "/drivers/MT2647/assets/images/small.png"
       },
       "settings": [
         {
@@ -805,6 +822,23 @@
         "en": "Door/Window Contact Sensor",
         "nl": "Deur/Raam Contact Sensor"
       },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact",
+        "alarm_tamper",
+        "measure_luminance",
+        "measure_temperature",
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/MT2648/assets/images/large.png",
+        "small": "/drivers/MT2648/assets/images/small.png"
+      },
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
       "zwave": {
         "manufacturerId": 373,
         "productTypeId": [
@@ -844,40 +878,6 @@
             }
           }
         }
-      },
-      "class": "sensor",
-      "capabilities": [
-        "alarm_contact",
-        "alarm_tamper",
-        "measure_luminance",
-        "measure_temperature",
-        "measure_battery"
-      ],
-      "images": {
-        "large": "/drivers/MT2648/assets/images/large.png",
-        "small": "/drivers/MT2648/assets/images/small.png"
-      },
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ]
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "alarm_contact",
-              "measure_luminance",
-              "measure_temperature",
-              "alarm_tamper"
-            ]
-          }
-        ]
       },
       "id": "MT2648",
       "settings": [
@@ -1016,6 +1016,19 @@
         "en": "Scene Switch",
         "nl": "Intelligente Schakelaar"
       },
+      "class": "other",
+      "capabilities": [
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/MT2652/assets/images/large.png",
+        "small": "/drivers/MT2652/assets/images/small.png"
+      },
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
       "zwave": {
         "manufacturerId": 373,
         "productTypeId": 256,
@@ -1050,14 +1063,6 @@
             "value": 0
           }
         ]
-      },
-      "class": "other",
-      "capabilities": [
-        "measure_battery"
-      ],
-      "images": {
-        "large": "/drivers/MT2652/assets/images/large.png",
-        "small": "/drivers/MT2652/assets/images/small.png"
       },
       "settings": [
         {
@@ -1563,6 +1568,11 @@
       "images": {
         "small": "/drivers/MT2653/assets/images/small.png",
         "large": "/drivers/MT2653/assets/images/large.png"
+      },
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
       },
       "zwave": {
         "manufacturerId": 373,

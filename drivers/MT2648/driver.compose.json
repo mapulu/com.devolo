@@ -3,6 +3,21 @@
     "en": "Door/Window Contact Sensor",
     "nl": "Deur/Raam Contact Sensor"
   },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_contact",
+    "alarm_tamper",
+    "measure_luminance",
+    "measure_temperature",
+    "measure_battery"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "energy" : {
+    "batteries": [ "CR123A" ]
+  },
   "zwave": {
     "manufacturerId": 373,
     "productTypeId": [
@@ -42,39 +57,5 @@
         }
       }
     }
-  },
-  "class": "sensor",
-  "capabilities": [
-    "alarm_contact",
-    "alarm_tamper",
-    "measure_luminance",
-    "measure_temperature",
-    "measure_battery"
-  ],
-  "images": {
-    "large": "{{driverAssetsPath}}/images/large.png",
-    "small": "{{driverAssetsPath}}/images/small.png"
-  },
-  "mobile": {
-    "components": [
-      {
-        "id": "icon"
-      },
-      {
-        "id": "battery",
-        "capabilities": [
-          "measure_battery"
-        ]
-      },
-      {
-        "id": "sensor",
-        "capabilities": [
-          "alarm_contact",
-          "measure_luminance",
-          "measure_temperature",
-          "alarm_tamper"
-        ]
-      }
-    ]
   }
 }

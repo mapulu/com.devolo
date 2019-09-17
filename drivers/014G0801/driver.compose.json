@@ -4,6 +4,29 @@
     "en": "Radiator Thermostat",
     "nl": "Radiatorthermostaat"
   },
+  "class": "thermostat",
+  "capabilities": [
+    "target_temperature",
+    "measure_temperature",
+    "measure_battery"
+  ],
+  "capabilitiesOptions": {
+    "target_temperature": {
+      "min": 4,
+      "max": 28,
+      "decimals": 1
+    }
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.jpg",
+    "large": "{{driverAssetsPath}}/images/large.jpg"
+  },
+  "energy": {
+    "batteries": [
+      "AA",
+      "AA"
+    ]
+  },
   "zwave": {
     "manufacturerId": 2,
     "productTypeId": 5,
@@ -26,22 +49,5 @@
     "associationGroups": [
       1
     ]
-  },
-  "class": "thermostat",
-  "capabilities": [
-    "target_temperature",
-    "measure_temperature",
-    "measure_battery"
-  ],
-  "capabilitiesOptions": {
-    "target_temperature": {
-      "min": 4,
-      "max": 28,
-      "decimals": 1
-    }
-  },
-  "images": {
-    "small": "{{driverAssetsPath}}/images/small.jpg",
-    "large": "{{driverAssetsPath}}/images/large.jpg"
   }
 }
