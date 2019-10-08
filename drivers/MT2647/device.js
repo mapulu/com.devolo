@@ -9,13 +9,9 @@ class DevoloMotionSensor extends ZwaveDevice {
 	onMeshInit() {
         this.setCapabilityValue('alarm_tamper', false);
 
-        // This sensor does not send a timeout when the motion period is over.
-        // However, it does send a BASIC command when the timeout is over. This is used to reset the alarm_motion.
-        this.registerCapability('alarm_motion', 'SENSOR_BINARY');
-
-        this.registerReportListener('BASIC', report => {
+        this.registerReportListener('BASIC', 'BASIC_SET', report => {
             if (!report || !report.hasOwnProperty('Value')) return null;
-            this.setCapabilityValue('alarm_motion', report.Value !== 0);
+            this.setCapabilityValue('alarm_motion', !!report.Value);
         });
 
         // This sensor does not send a timeout when the tamper period is over. Use a timeout to reset the capability
