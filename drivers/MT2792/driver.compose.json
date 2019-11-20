@@ -2,7 +2,7 @@
     "id": "MT2792",
     "name": {
       "en": "Metering Plug",
-	  "de": "Schalt-Messsteckdose"
+      "de": "Schalt-Messsteckdose"
     },
     "class": "socket",
     "capabilities": [
@@ -27,13 +27,13 @@
       "learnmode": {
         "instruction": {
           "en": "Press the button of the connected Smart Metering Plug 3x within 1.2 seconds to start the inclusion process",
-		  "de": "Drücke innerhalb von 1,2 Sekunden die Taste des angeschlossenen Smart Metering Plug 3x"
+          "de": "Drücke innerhalb von 1,2 Sekunden die Taste des angeschlossenen Smart Metering Plug 3x"
         }
       },
       "unlearnmode": {
         "instruction": {
           "en": " Press the ON/OFF button 3x within 1.2 seconds to put the device into Exclusion mode. (indicated by white LED: 0.5 sec. ON, 0.5 sec. OFF)",
-		  "de": "Drücke die ON/OFF-Taste 3x innerhalb von 1,2 Sekunden, um das Gerät in den Exlusionsmodus zu versetzen. (Anzeige durch weiße LED: 0,5 Sek. EIN, 0,5 Sek. AUS)"
+      "de": "Drücke die ON/OFF-Taste 3x innerhalb von 1,2 Sekunden, um das Gerät in den Exlusionsmodus zu versetzen. (Anzeige durch weiße LED: 0,5 Sek. EIN, 0,5 Sek. AUS)"
         }
       },
       "associationGroups": [
