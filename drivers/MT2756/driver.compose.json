@@ -1,0 +1,50 @@
+{
+    "id": "MT2756",
+    "name": {
+      "en": "Flood Sensor",
+	  "de": "Wassersensor"
+    },
+    "class": "sensor",
+    "capabilities": [
+      "alarm_tamper",
+      "alarm_water",
+      "measure_battery"
+    ],
+    "images": {
+      "large": "/drivers/MT2756/assets/images/large.png",
+      "small": "/drivers/MT2756/assets/images/small.png"
+    },
+    "zwave": {
+      "manufacturerId": 373,
+      "productTypeId": [
+        2
+      ],
+      "productId": [
+        33
+      ],
+      "zwaveAllianceProductId": 2227,
+      "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2227/MT02756_MT02755_Manual.pdf",
+      "learnmode": {
+        "instruction": {
+          "en": "Press the tamper key three times within 1.5seconds to enter the inclusion mode.",
+		  "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Inklusionsmodus zu gelangen. "
+        }
+      },
+      "unlearnmode": {
+        "instruction": {
+          "en": "Press tamper key three times within 1.5 seconds to enter the exclusion mode.",
+		  "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Exklusionsmodus zu gelangen."
+        }
+      },
+      "associationGroups": [
+        1
+      ],
+      "associationGroupsOptions": {
+        "1": {
+          "hint": {
+            "en": "Z-Wave Plus Lifeline"
+          }
+        }
+      }
+    }
+  }

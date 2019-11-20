@@ -1,0 +1,51 @@
+{
+    "id": "MT2755",
+    "name": {
+      "en": "Humidity Sensor",
+	  "de": "Luftfeuchtemelder "
+    },
+    "class": "sensor",
+    "capabilities": [
+      "alarm_tamper",
+      "measure_battery",
+      "measure_humidity",
+      "measure_temperature"
+    ],
+    "images": {
+      "large": "/drivers/MT2755/assets/images/large.png",
+      "small": "/drivers/MT2755/assets/images/small.png"
+    },
+    "zwave": {
+      "manufacturerId": 373,
+      "productTypeId": [
+        2
+      ],
+      "productId": [
+        32
+      ],
+      "zwaveAllianceProductId": 2226,
+      "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2226/MT02756_MT02755_Manual.pdf",
+      "learnmode": {
+        "instruction": {
+          "en": "Pressing the tamper key three times within 1.5 seconds to enter the inclusion mode",
+		  "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Inklusionsmodus zu gelangen."
+        }
+      },
+      "unlearnmode": {
+        "instruction": {
+          "en": "Pressing the tamper key three times within 1.5 seconds to enter the exclusion mode",
+          "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Exklusionsmodus zu gelangen."
+        }
+      },
+      "associationGroups": [
+        1
+      ],
+      "associationGroupsOptions": {
+        "1": {
+          "hint": {
+            "en": "Z-Wave Plus Lifeline"
+          }
+        }
+      }
+    }
+  }

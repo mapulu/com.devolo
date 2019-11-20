@@ -1,0 +1,50 @@
+{
+    "id": "MT2792",
+    "name": {
+      "en": "Metering Plug",
+	  "de": "Schalt-Messsteckdose"
+    },
+    "class": "socket",
+    "capabilities": [
+      "measure_power",
+      "meter_power",
+      "onoff"
+    ],
+    "images": {
+      "large": "/drivers/MT2792/assets/images/large.png",
+      "small": "/drivers/MT2792/assets/images/small.png"
+    },
+    "zwave": {
+      "manufacturerId": 373,
+      "productTypeId": [
+        1
+      ],
+      "productId": [
+        18
+      ],
+      "zwaveAllianceProductId": 2057,
+      "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2057/Home_Control_Schalt_Messsteckdose_2.0_2016_11_02_eng.pdf",
+      "learnmode": {
+        "instruction": {
+          "en": "Press the button of the connected Smart Metering Plug 3x within 1.2 seconds to start the inclusion process",
+		  "de": "Drücke innerhalb von 1,2 Sekunden die Taste des angeschlossenen Smart Metering Plug 3x"
+        }
+      },
+      "unlearnmode": {
+        "instruction": {
+          "en": " Press the ON/OFF button 3x within 1.2 seconds to put the device into Exclusion mode. (indicated by white LED: 0.5 sec. ON, 0.5 sec. OFF)",
+		  "de": "Drücke die ON/OFF-Taste 3x innerhalb von 1,2 Sekunden, um das Gerät in den Exlusionsmodus zu versetzen. (Anzeige durch weiße LED: 0,5 Sek. EIN, 0,5 Sek. AUS)"
+        }
+      },
+      "associationGroups": [
+        1
+      ],
+      "associationGroupsOptions": {
+        "1": {
+          "hint": {
+            "en": "As the default, the node with the ID 1 is entered in this group. This corresponds to the controller ID. For this association group 1, the Home Control Smart Metering Plug reports the status of the following command classes:\r\nSWITCH_BINARY_REPORT\r\nMETER_REPORT\r\nALARM_REPORT"
+          }
+        }
+      }
+    }
+  }
