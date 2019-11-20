@@ -4,11 +4,11 @@
     "value": 0,
     "label": {
       "en": "Basic Set OFF Level",
-	  "de": "Basic Set OFF Wert"
+      "de": "Basic Set OFF Wert"
     },
     "hint": {
       "en": "Setting the BASIC command value.\r\nWhen the flood trigger off(0x00), send the BASIC CC to the group 2.",
-	  "de": "Einstellen des BASIC-Befehlswertes. \r\nWenn der Wassermelder aus meldet (0x00), senden die BASIC CC an die Gruppe 2."
+      "de": "Einstellen des BASIC-Befehlswertes. \r\nWenn der Wassermelder aus meldet (0x00), senden die BASIC CC an die Gruppe 2."
     },
     "zwave": {
       "index": 1,
@@ -26,11 +26,11 @@
     "value": 255,
     "label": {
       "en": "Basic Set ON Level",
-	  "de": "Basic Set ON Wert"
+      "de": "Basic Set ON Wert"
     },
     "hint": {
       "en": "Setting the BASIC command value.\r\nWhen the flood trigger on(0xFF), send the BASIC CC to the group 2.",
-	  "de": "Einstellen des BASIC-Befehlswertes. \r\nWenn der Wassermelder ein meldet (auslöst) (0x00), sende die BASIC CC an die Gruppe 2."
+      "de": "Einstellen des BASIC-Befehlswertes. \r\nWenn der Wassermelder ein meldet (auslöst) (0x00), sende die BASIC CC an die Gruppe 2."
     },
     "zwave": {
       "index": 2,
@@ -48,11 +48,11 @@
     "value": 0,
     "label": {
       "en": "Operation Mode",
-	  "de": "Betriebsart"
+      "de": "Betriebsart"
     },
     "hint": {
       "en": "Operation mode. Using bit to control.",
-	  "de": "Betriebsart. Einstellung per Bit"
+      "de": "Betriebsart. Einstellung per Bit"
     },
     "zwave": {
       "index": 5,
@@ -70,11 +70,11 @@
     "value": 0,
     "label": {
       "en": "Customer Function",
-	  "de": "Customer Funktion"
+      "de": "Customer Funktion"
     },
     "hint": {
       "en": "Customer function switch, using bit control.\n8: Disable send out BASIC OFF after the flood event cleared.(1:Disable, 0:Enable)\n16: Notification Type,0:Using Notification Report.1:Using Sensor Binary Report.\n32: Disable Multi CC in auto report.(1:Disable,0:Enable)\n64: Disable to report battery state  when the device triggered. (1:Disable,  0:Enable)",
-	  "de": "Customer function switch. Einstellung per Bit. \n8: Deaktiviert das Senden von BASIC OFF, nachdem das Wassereignis gelöscht wurde.(1:Disable, 0:Enable)\n16: Notification Type,0:Using Notification Report.1:Using Sensor Binary Report.\n32: Disable Multi CC in Auto Report.(1:Disable,0:Enable)\n64: Deaktiviert, um den Batteriestatus zu melden, wenn das Gerät ausgelöst wurde. (1:Deaktivieren, 0:Aktivieren)"
+      "de": "Customer function switch. Einstellung per Bit. \n8: Deaktiviert das Senden von BASIC OFF, nachdem das Wassereignis gelöscht wurde.(1:Disable, 0:Enable)\n16: Notification Type,0:Using Notification Report.1:Using Sensor Binary Report.\n32: Disable Multi CC in Auto Report.(1:Disable,0:Enable)\n64: Deaktiviert, um den Batteriestatus zu melden, wenn das Gerät ausgelöst wurde. (1:Deaktivieren, 0:Aktivieren)"
     },
     "zwave": {
       "index": 7,
@@ -92,7 +92,7 @@
     "value": 12,
     "label": {
       "en": "Auto Report Battery Time",
-	  "de": "Batterie Intervall"
+      "de": "Batterie Intervall"
     },
     "hint": {
       "en": "The interval time for auto report the battery level. \r\n0 means turn off auto report.\r\nThe default value is 12. The tick time can setting by the configuration No.20.",
@@ -113,11 +113,11 @@
     "value": 12,
     "label": {
       "en": "Auto Report Flood Time",
-	  "de": "Wassermeldung Intervall"
+      "de": "Wassermeldung Intervall"
     },
     "hint": {
       "en": "The interval time for auto report the flood state. \r\n0 means turn off auto report.\r\nThe default value is 12. The tick time can setting by the configuration No.20.",
-	  "de": "Die Intervallzeit für die automatische Wassermeldung. \r\n0 bedeutet, den automatischen Bericht auszuschalten. "
+      "de": "Die Intervallzeit für die automatische Wassermeldung. \r\n0 bedeutet, den automatischen Bericht auszuschalten. "
     },
     "zwave": {
       "index": 15,
@@ -134,11 +134,11 @@
     "value": 30,
     "label": {
       "en": "Auto Report Tick Interval",
-	  "de": "Auto Report Interval"
+      "de": "Auto Report Interval"
     },
     "hint": {
       "en": "The interval time for auto report each tick.\r\nSetting this configuration will effect configuration No.10, No.13, \r\nNo.14.Units of one minute.\r\nCaution 1:Setting to 0 means turn off all auto report function.\r\nCaution 2:The value is unsigned byte",
-	  "de": "Die Intervallzeit für den automatischen Bericht.\r\nDie Einstellung dieser Konfiguration wirkt sich auf die Konfiguration Nr. 10, Nr. 13 und Nr.14 aus. Einheiten von einer Minute.\r\nAchtung 1:Das Setzen auf 0 bedeutet, dass alle automatischen Berichtsfunktionen deaktiviert werden. Achtung 2: Der Wert ist unsigned byte"
+      "de": "Die Intervallzeit für den automatischen Bericht.\r\nDie Einstellung dieser Konfiguration wirkt sich auf die Konfiguration Nr. 10, Nr. 13 und Nr.14 aus. Einheiten von einer Minute.\r\nAchtung 1:Das Setzen auf 0 bedeutet, dass alle automatischen Berichtsfunktionen deaktiviert werden. Achtung 2: Der Wert ist unsigned byte"
     },
     "zwave": {
       "index": 20,

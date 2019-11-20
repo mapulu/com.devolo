@@ -1,49 +1,49 @@
 [
 {
-		"id": "5",
-		"type": "dropdown",
-		"label": {
-			"en": "Operation Mode",
-			"de": "Betriebsart"
-		},
-		"value": "8",
-		"values": [
-			{
-				"id": "8",
-				"label": {
-					"en": "Temperature report enabled (Celcius)",
-					"de": "Temperatur in Celcius"
-				}
-				},
-			{
-				"id": "0",
-				"label": {
-					"en": "Temperature report enabled (Fahrenheit)",
-					"de": "Temperatur in Fahrenheit"
-				}
-			}
-		],
-		"hint": {
-			"en": "Setting the temperature scale. Fahrenheit or Celsius",
-			"de": "Einstellen der Temperaturskala. Fahrenheit oder Celsius"
-		}
+        "id": "5",
+        "type": "dropdown",
+        "label": {
+            "en": "Operation Mode",
+            "de": "Betriebsart"
+        },
+        "value": "8",
+        "values": [
+            {
+                "id": "8",
+                "label": {
+                    "en": "Temperature report enabled (Celcius)",
+                    "de": "Temperatur in Celcius"
+                }
+                },
+            {
+                "id": "0",
+                "label": {
+                    "en": "Temperature report enabled (Fahrenheit)",
+                    "de": "Temperatur in Fahrenheit"
+                }
+            }
+        ],
+        "hint": {
+            "en": "Setting the temperature scale. Fahrenheit or Celsius",
+            "de": "Einstellen der Temperaturskala. Fahrenheit oder Celsius"
+        }
 },
 {
-		"id": "7",
-		"type": "number",
-		"label": {
-			"en": "Customer Function",
-			"de": "Customer Function"
-		},
-		"value": 48,
-		"attr": {
-			"min": 0,
-			"max": 127
-		},
-		"hint": {
-			"en": "Bit 0 - 3: Reserved. Bit 4: Notification Type (0 = Using notification report, 1 = Using binary report). Bit 5: Multi CC in auto report (1 = Disable, 0 = Enable), Bit 6: Report battery state when device triggered (1 = Disable, 0 = Enable). Preferred settings for Homey: 00000110 = 48.",
-			"de": "Bit 0 - 3: Reserviert. Bit 4: Benachrichtigungsart (0 = notification report verwenden, 1 = binary report verwenden). Bit 5: Multi CC im auto report (1 = Deaktivieren, 0 = Aktivieren), Bit 6: Melden des Batteriestatus bei Geräteauslösung (1 = Deaktivieren, 0 = Aktivieren). Bevorzugte Einstellungen für Homey: 00000110 = 48."
-		}
+        "id": "7",
+        "type": "number",
+        "label": {
+            "en": "Customer Function",
+            "de": "Customer Function"
+        },
+        "value": 48,
+        "attr": {
+            "min": 0,
+            "max": 127
+        },
+        "hint": {
+            "en": "Bit 0 - 3: Reserved. Bit 4: Notification Type (0 = Using notification report, 1 = Using binary report). Bit 5: Multi CC in auto report (1 = Disable, 0 = Enable), Bit 6: Report battery state when device triggered (1 = Disable, 0 = Enable). Preferred settings for Homey: 00000110 = 48.",
+            "de": "Bit 0 - 3: Reserviert. Bit 4: Benachrichtigungsart (0 = notification report verwenden, 1 = binary report verwenden). Bit 5: Multi CC im auto report (1 = Deaktivieren, 0 = Aktivieren), Bit 6: Melden des Batteriestatus bei Geräteauslösung (1 = Deaktivieren, 0 = Aktivieren). Bevorzugte Einstellungen für Homey: 00000110 = 48."
+        }
 },
   {
     "id": "10",

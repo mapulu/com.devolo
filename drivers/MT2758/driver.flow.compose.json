@@ -6,12 +6,12 @@
   "actions": [
     {
       "name":"play_sound",
-	  	  "title": {
+       "title": {
         "en": "Alarm Sound",
-		"de": "Alarm Ton"
-},
+        "de": "Alarm Ton"
+       },
       "id": "MT2758play_sound",
-	        "args": [
+            "args": [
         {
           "name": "sound",
           "type": "dropdown",
@@ -76,7 +76,7 @@
         }
       ]
     },
-	{
+    {
       "id": "MT2758disable_siren",
       "title": {
         "en": "Disable Siren",
@@ -88,7 +88,7 @@
       },
       "args": []
     },
-		{
+        {
       "id": "MT2758enable_siren",
       "title": {
         "en": "Enable Siren",

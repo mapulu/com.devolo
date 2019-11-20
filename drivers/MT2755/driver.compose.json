@@ -2,7 +2,7 @@
     "id": "MT2755",
     "name": {
       "en": "Humidity Sensor",
-	  "de": "Luftfeuchtemelder "
+      "de": "Luftfeuchtemelder "
     },
     "class": "sensor",
     "capabilities": [
@@ -28,7 +28,7 @@
       "learnmode": {
         "instruction": {
           "en": "Pressing the tamper key three times within 1.5 seconds to enter the inclusion mode",
-		  "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Inklusionsmodus zu gelangen."
+          "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Inklusionsmodus zu gelangen."
         }
       },
       "unlearnmode": {

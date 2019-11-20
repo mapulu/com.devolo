@@ -2,7 +2,7 @@
     "id": "MT2758",
     "name": {
       "en": "Siren Indoor",
-	  "de": "Alarmsirene"
+      "de": "Alarmsirene"
     },
     "class": "homealarm",
     "capabilities": [
@@ -39,7 +39,7 @@
         "onoff",
         "alarm_tamper"
     ],
-	 "defaultConfiguration": [
+     "defaultConfiguration": [
       {
         "id": 7,
         "size": 1,

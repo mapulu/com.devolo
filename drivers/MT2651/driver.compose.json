@@ -2,7 +2,7 @@
     "id": "MT2651",
     "name": {
       "en": "Smoke Detector",
-	  "de": "Rauchmelder"
+      "de": "Rauchmelder"
     },
     "class": "sensor",
     "capabilities": [
@@ -26,13 +26,13 @@
       "learnmode": {
         "instruction": {
           "en": " Briefly press the test alarm button on the front of the smoke detector. The LED flashes red. With this, the registration on the Central Unit has been completed successfully.",
-		  "de": "Drücke kurz den Testalarm-Taster auf der Vorderseite des Rauchmelders. Die LED blinkt rot. Damit ist die Anmeldung an die Zentrale erfolgreichbeendet."
+          "de": "Drücke kurz den Testalarm-Taster auf der Vorderseite des Rauchmelders. Die LED blinkt rot. Damit ist die Anmeldung an die Zentrale erfolgreichbeendet."
         }
       },
       "unlearnmode": {
         "instruction": {
           "en": "Press the program switch of MT:2651 for 1 second at least to be excluded. The red LED setting light will flash continuously in Exclusion condition.",
-		  "de":  "Drücken kurz den Testalarm-Taster auf der Vorderseite des Home Control Rauchmelders."
+          "de":  "Drücken kurz den Testalarm-Taster auf der Vorderseite des Home Control Rauchmelders."
         }
       },
       "associationGroups": [

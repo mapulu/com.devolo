@@ -2,7 +2,7 @@
     "id": "MT2756",
     "name": {
       "en": "Flood Sensor",
-	  "de": "Wassersensor"
+      "de": "Wassersensor"
     },
     "class": "sensor",
     "capabilities": [
@@ -27,13 +27,13 @@
       "learnmode": {
         "instruction": {
           "en": "Press the tamper key three times within 1.5seconds to enter the inclusion mode.",
-		  "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Inklusionsmodus zu gelangen. "
+          "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Inklusionsmodus zu gelangen. "
         }
       },
       "unlearnmode": {
         "instruction": {
           "en": "Press tamper key three times within 1.5 seconds to enter the exclusion mode.",
-		  "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Exklusionsmodus zu gelangen."
+          "de": "Drücke dreimal innerhalb von 1,5 Sekunden die Sabotagetaste, um in den Exklusionsmodus zu gelangen."
         }
       },
       "associationGroups": [
